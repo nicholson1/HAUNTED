@@ -1,12 +1,17 @@
-Shader "Unlit/SpriteOutline"
+Shader "Unlit/ApplyOutline"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
+        [HideInInspector]_MainTex ("Texture", 2D) = "white" {}
+        _OutlineWidth ("OutlineWidth", Range(0, 1)) = 1
+        _OutlineColor ("OutlineColor", Color) = (1, 1, 1, 1)
+
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "Queue"="Transparent" "RenderType"="Transparent" }
+        //Blend SrcAlpha OneMinusSrcAlpha
+        //AlphaTest Greater 0.1
         LOD 100
 
         Pass
@@ -31,9 +36,13 @@ Shader "Unlit/SpriteOutline"
                 UNITY_FOG_COORDS(1)
                 float4 vertex : SV_POSITION;
             };
-
+            
             sampler2D _MainTex;
             float4 _MainTex_ST;
+            
+            float _OutlineWidth;
+            float4 _OutlineColor;
+            sampler2D _SelectionBuffer;
 
             v2f vert (appdata v)
             {
@@ -46,10 +55,30 @@ Shader "Unlit/SpriteOutline"
 
             fixed4 frag (v2f i) : SV_Target
             {
+                //sample directions
+                #define DIV_SQRT_2 0.70710678118
+                float2 directions[8] = {float2(1, 0), float2(0, 1), float2(-1, 0), float2(0, -1),
+                  float2(DIV_SQRT_2, DIV_SQRT_2), float2(-DIV_SQRT_2, DIV_SQRT_2),
+                  float2(-DIV_SQRT_2, -DIV_SQRT_2), float2(DIV_SQRT_2, -DIV_SQRT_2)};
+
+                float aspect = _ScreenParams.x * (_ScreenParams.w - 1); //width times 1/height
+                float2 sampleDistance = float2(_OutlineWidth / aspect, _OutlineWidth);
+                
+                //generate outline
+                float maxAlpha = 0;
+                for(uint index = 0; index<8; index++){
+                  float2 sampleUV = i.uv + directions[index] * sampleDistance;
+                  maxAlpha = max(maxAlpha, tex2D(_SelectionBuffer, sampleUV).a);
+                }
+                //remove core
+                float border = max(0, maxAlpha - tex2D(_SelectionBuffer, i.uv).a);
+                
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, i.uv);
-                // apply fog
-                UNITY_APPLY_FOG(i.fogCoord, col);
+                //_OutlineColor = float4(_OutlineColor.r + _SinTime.w, _OutlineColor.g + _SinTime.w,  _OutlineColor.b + _SinTime.w, 0);
+                _OutlineColor = float4(_OutlineColor.r  , _OutlineColor.g ,  _OutlineColor.b , 0);
+
+                col = lerp(col, _OutlineColor, border);
                 return col;
             }
             ENDCG
