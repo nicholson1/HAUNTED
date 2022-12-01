@@ -1,0 +1,11 @@
+﻿title: Start
+tags:
+---
+<<declare $jollyRanchersChosen to true>>
+<<declare $bff to "Ash">>
+<<declare $moves to "River">>
+<<declare $pal to "Jules">>
+Haunted Title Screen
+
+<<jump Scene1>>
+===
