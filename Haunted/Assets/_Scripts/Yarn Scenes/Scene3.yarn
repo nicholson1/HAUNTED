@@ -1,9 +1,286 @@
 ﻿title: Scene3
 tags:
 ---
+Leaves crunch beneath your feet as you make your way down the street. 
+You look over at {$bff}, swinging your pillowcase of candy as you walk. 
+This is the first Halloween where you're with {$bff} alone.
+The two of you have gotten closer in the past few years. You're best friends.
+You wish you were something more.
 
+->Next.
+	<<jump Scene3_3b>>
 ===
+title: Scene3_3b
+---
+You look up at {$bff}, pleading your case. “I'm telling you, this house is legit haunted. You'll see.”
 
+They look back at you, disbelief clear on their face. 
+
+“All I'm saying is, if ghosts were real, I feel like we would have heard about it by now.”
+
+->“It's real, I promise!”
+<<jump Scene3_3c>>
+->“You're just jealous that the ghosts chose me and not you.
+<<jump Scene3_3c>>
+===
+title: Scene3_3c
+---
+“I guess we'll see about that!”
+You round the corner to the house, taking it all in. It stares back at you, empty, menacing.
+You adjust your werewolf-paw gloves - a much-appreciated upgrade of recent years. Your anticipation builds.
+
+<<if $bff is "Ash">>
+    Ash goes to touch their chin contemplatively, but remembers their ironic vampire makeup at the last second, fidgeting awkwardly.
+<<elseif $bff is "Jules">>
+    Jules readjusts their cat ears. They're starting to look a little uneasy, but they're hiding it well.
+    Or, they would be, if they were with anyone but you.
+<<else>>
+    You glance over at River. They look unflappable as ever, comfortably taking in the house from beneath their… costume apparatus.
+    You really need to get into whatever show they're watching so you can appreciate their look even more.
+<<endif>>
+
+->“Let's go inside.”
+    <<jump Scene3_3d>>
+===
+title: Scene3_3d
+---
+You carefully creep up the creaky steps.
+As you cross the threshold, you feel the crunch of broken glass beneath your feet.
+
+“This is where I saw the first one,” you whisper, pointing to the front door.
+
+<<if $bff is "Ash">>
+    Ash laughs. “The first time you went psychic?”
+<<elseif $bff is "Jules">>
+	Jules is trying to be polite, but they giggle a little bit. “This is where you saw… the ghost?”
+<<else>>
+	River nods solemnly, but you can tell they're teasing you.
+	“Guess my parents were right about the vibrations of this place after all.”
+<<endif>>
+
+You are deeply affronted at the disrespect. “Respect the space, man!”
+
+{$bff} looks at you incredulously. “C'mon, Del. It's just a house. It can't hear me.”
+
+They walk into the living room, running a finger along the dusty old couch.
+Above the fireplace, only the frame of the mirror from your last visit remains. Shards of glass litter the floor.
+
+{$bff} looks up at you with anticipation. “Why don't we do a little exploring?”
+
+->Stay downstairs where it feels safer.
+    <<jump Scene3_GROUND1>>
+->Be brave and explore further.
+    <<jump Scene3_UPSTAIRS_1>>
+===
+title: Scene3_GROUND1
+---
+<<set $groundFloorExplored to true>>
+Your parents' years-old warnings about tetanus ring in your mind.
+“I don't know,” you say uneasily, “I'm not sure if this place is safe.”
+
+“Lame.” 
+They're joking, but it stings more than it should. You hope they still think you're cool.
+
+{$bff} gets up and heads for the stairs. The old wooden steps creak ominously under their weight. 
+“I'll be upstairs. If I see any ghosts -” they roll their eyes “- I'll report back.”
+
+You creep steadily through the downstairs, keeping an eye out for the supernatural.
+
+The dim hallway lined with old portraits. The study with the taxidermied deer head. The conservatory, chock full of dead and decaying plants. 
+None of these places catch your eye.
+
+“Where is it,” you whisper to yourself. “It's gotta be down here somewhere.”
+
+The visions of your future, while disturbing, have grown into a reliable force in your life.
+They leave you with more questions than answers. 
+No matter what they're about, they fill you with terror and uncertainty. 
+But beneath all that fear, a part of you has come to crave the mystery it provides.
+
+You reach the end of the hall, pushing open the final door. As you step into the kitchen, a chill goes down your spine. This is the place. Your vision is in here.
+
+->Explore the kitchen.
+<<jump Scene3_KITCHEN>>
+===
+title: Scene3_KITCHEN
+---
+This whole house is preserved, manicured, immaculate except for the layers of dust. This kitchen almost feels like stepping into a different universe.
+
+Pots clutter the stove. You can almost imagine them rattling and boiling making food for the residents of this old house.
+
+Pots of herbs line the windowsill. Most of them are dead, but the mint is stubbornly climbing the window panes, even after all this time. Resilient little guy.
+
+One side of the sink is piled high with dishes. The other side is full of soapy, opaque water. No one lives here; no one has washed these dishes in years. So why is the water in the sink steaming?
+
+->Inspect the sink.
+	<<jump Scene3_KITCHEN2>>
+===
+title: Scene3_KITCHEN2
+---
+Your unease grows as you eye the steaming sink.
+You approach cautiously.
+You can hear {$bff}'s footsteps right above you. Their feet move perfectly in time with yours.
+
+You peer into the sink.
+The steam from the sink billows up into your face.
+You push your now-damp hair back and are surprised to feel your werewolf-eared headband blocking your way.
+
+You peer into the murky water, expecting to see your own concerned, curious face.
+Beside your own reflection, you see {$bff}, peering back at you.
+As you lock eyes through this strange reflection, both of your faces shift from morbid curiosity to cold, bitter fear.
+
+You gasp, reaching toward the water, reaching out for them. But before you can say anything, the water ripples and shifts.
+
+->The vision is here.
+    <<jump Scene3_FUTUREVISION_1>>
+===
+title: Scene3_UPSTAIRS_1
+---
+<<set $groundFloorExplored to false>>
+You take a deep, cleansing breath. It's just a house, Del. It's just a house.
+“Yeah, let's go for it.”
+
+If one person was enough to make the stairs creak, two people is enough to make you worried about falling through the floor.
+You grip the banister for dear life, following {$bff} onto the upstairs landing.
+
+“Well, what are we waiting for? Let's find ourselves a ghost.”
+
+->Explore upstairs.
+    <<jump Scene3_UPSTAIRS_2>>
+===
+title: Scene3_UPSTAIRS_2
+---
+You creep steadily through the upstairs, keeping an eye out for the supernatural.
+
+The dim hallway lined with old portraits. The study with the taxidermied deer head. The conservatory, chock full of dead and decaying plants. None of these places catch your eye.
+
+Your unease grows with every step. “This is so lame,” you think to yourself. “They're gonna think I made it all up.”
+“I'm sure we'll see something soon. Something is always here,” you hear yourself say, but your voice sounds far away to your own ears. Where is it? Where is your vision?
+
+These visions of your future, while disturbing, have grown into a reliable force in your life.
+They leave you with more questions than answers. 
+No matter what they're about, they fill you with terror and uncertainty. 
+But beneath all that fear, a part of you has come to crave the mystery it provides.
+
+You reach the end of the hall, pushing open the final door. As you step into the bedroom, a chill goes down your spine. This is the place. Your vision is in here.
+
+->Explore the bedroom.
+    <<jump Scene3_BEDROOM_1>>
+===
+title: Scene3_BEDROOM_1
+---
+The bedroom, like the rest of the house, is immaculately preserved.
+If it weren't for the dust, you'd think the owners had just left for vacation.
+
+You glance over at {$bff}. You can see goosebumps rising on their arms from the chill.
+They look back at you, and their face hardens with resolve. “Ok, so. Ghosts. Where should we look?”
+
+->Explore further.
+    <<jump Scene3_BEDROOM_2>>
+===
+title: Scene3_BEDROOM_2
+---
+You round the corner of the bed. {$bff} follows close behind you.
+Together, you inspect the bedroom. The tight military corners of the bedspread. The jewelry lovingly placed on the bedside table. The yellowing family photographs on the walls - some of them look suspiciously like you.
+
+As you round the corner of the bed, both of you glance up and find, inexplicably, the mirror from the downstairs mantle, completely intact, hanging from the wall. You shiver with the sudden cold.
+
+The mirror ripples and shifts, your reflections fading away.
+{$bff} gasps, tightly clutching your hand. You barely have the presence of mind to be thrilled at this development.
+
+->The vision is upon you both.
+    <<jump Scene3_FUTUREVISION_1>>
+===
+title: Scene3_FUTUREVISION_1
+---
+When the reflection settles, you still see two figures before you. You can't see their faces, but something in you just knows it's you and {$bff}. 
+You're both a little taller in the vision, a little more worn out.
+
+The figures are engaged in heated discussion. You lean a little closer, trying to hear what they're saying, but the sound is muffled, almost like you're underwater.
+
+->Try to listen to the conversation.
+	<<jump Scene3_FUTUREVISION_2>>
+===
+title: Scene3_FUTUREVISION_2
+---
+Future {$bff} throws up their hands in exasperation. Future You sighs, looking down in resignation.
+Your chin wobbles, sympathy tears springing to your eyes. Future You is so defeated.
+Future {$bff} shifts toward Future You in comfort. The motion looks familiar, but ineffective.
+Something about this moment feels so final. The love between you is still there, but it's stale, burning out, not enough.
+
+Back in the house, you sigh shakily. 
+<<if $groundFloorExplored is false>>
+    {$bff} squeezes your hand. You glance away from the mirror to gauge their reaction, and just like that, the moment is broken.
+    ->The vision is over.
+	    <<jump Scene3_GROUND_7>>
+<<else>>
+    You reach toward the water, like if you could muddle vision, it couldn't possibly come true.
+    The moment your hand touches the water, the image dissipates, like it was never even there.
+    ->The vision is over.
+	    <<jump Scene3_UPSTAIRS_6>>
+<<endif>>
+===
+title: Scene3_GROUND_7
+---
+You are yanked back into reality. Your heart is pounding in your chest. You feel like you just ran a mile.
+You hear the thumping of footsteps above you. They move across the hall. Down the stairs. Out the front door.
+
+You run out to meet {$bff}. They're on the front porch, clearly just as disoriented as you.
+
+“Delphine, what the hell was that? Why would you even bring me here?”
+
+You step towards them, but they step away. “I'm sorry, I didn't know it would-”
+
+They shake their head furiously. “It's not even real. I'm being pranked or something. The vision… it's not gonna come true. I won't let it come true.”
+
+->“We're gonna face it together, no matter what it is.”
+    <<jump Scene3_PORCHGOOD>>
+->“The visions always come true. You can't stop it.” 
+    <<jump Scene3_PORCHBAD>>
+===
+title: Scene3_UPSTAIRS_6
+---
+The two of you stare at each other in shock. Your heart is racing. You feel like you just ran a mile.
+The two of you rush out of the house. The cool nighttime air is a relief as you step onto the porch.
+
+You and {$bff} sit on the steps, still holding hands. For a long moment, everything is silent. Then-
+
+“Do you think it's going to come true? The vision, I mean.”
+
+You look back at {$bff}, thinking about the other visions you've had in the house. “They always come true. Not always in the way we expect, but they always come true.”
+
+“Then why do you even try? If things are going to go this badly, why would you start something like this?”
+
+->“Because sometimes the stuff before it is really good.”
+    <<jump Scene3_PORCHGOOD>>
+->“I don't know, man. Why do we do anything?”
+    <<jump Scene3_PORCHBAD>>
+===
+title: Scene3_PORCHBAD
+---
+<<set $porchTogether to false>>
+<<if $groundFloorExplored is false>>
+    {$bff} lets go of your hand, taking a step back. In this moment, you feel like you lost something huge.
+<<endif>>
+They aren't very soothed by what you've said, but you seem to have stopped their panic spiral for the time being.
+
+“I don't know what to make of this. I need some time to myself,” they say. They trudge down the street, alone.
+
+You're left on the porch, embarrassment and dread heavy in your chest. You hope you haven't missed your chance with them after all.
+<<jump Scene3_End>>
+===
+title: Scene3_PORCHGOOD
+---
+They don't really know what to say to that, and neither do you. 
+
+<<if $groundFloorExplored is true>>
+	You reach out and take {$bff}'s hand. They sit down beside you on the steps.
+<<endif>>
+
+The two of you sit on the porch, watching other trick-or-treaters make their way from house to house.
+
+Sure, you're scared of the vision you just saw in the house. But a quiet part of you is a little bit thrilled that {$bff} never let go of your hand.
+<<jump Scene3_End>>
+===
 title: Scene3_End
 ---
 ->Go on.

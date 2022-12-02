@@ -10,6 +10,8 @@ tags:
 //variables established in Scene 2
 
 //variables established in Scene 3
+<<declare $groundFloorExplored to true>>
+<<declare $porchTogether to true>>
 
 //variables established in Scene 4
 <<declare $parenthoodRejection to false>>
