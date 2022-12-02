@@ -1,7 +1,277 @@
 ﻿title: Scene2
 tags:
 ---
+Then years passed, and Halloween is coming again in a few days.
 
+You lay in your bed and look at the bedroom ceiling. The Halloween experience a few years ago comes back to your mind.
+
+“What I saw in the mirror… What happened in that house, could that be real?”
+
+You ask yourself.
+
+Or was it just an illusion? Were you so scared that you got something wrong?
+
+“What do you think, Del?”
+
+You look at the dolphin doll beside the bed which you gave the same name as yours, and feel like it is smiling at you.
+
+“Was that my illusion? Or did I find a magical mirror?”
+
+Your parents and friends didn’t believe what you were saying, but your gut told you that what happened was real. It’s such an ambivalence that you can’t help but care about that house.
+
+More importantly…
+
+“You know, Del? It’s so amazing if I found a magical mirror.”
+
+Like the one in Snow White, even if this mirror cannot talk to you nor answer your questions. The feeling of discovering a hidden secret excites you.
+
+“I need to go there again this Halloween.”
+
+You tell yourself.
+
+Whether it is a magical mirror or not, you want an accurate answer.
+
+“But should I go there with someone else? Or should I go there alone?”
+
+->Talk to your friends about the house.
+    <<jump Scene2_1a>>
+->Talk to your parents about the house.
+    <<jump Scene2_1b>>
+->Go to the house alone.
+    <<jump Scene2_1c>>
+===
+
+title: Scene2_1a
+---
+“No, they won’t go with me.” You quickly dismiss the idea.
+
+They seem to have forgotten about that house a few years ago. 
+
+Even if they remember, they might not go in with you - you explored the house alone at that time, and you remember it very clearly.
+
+<<jump Scene2_2>>
+===
+
+title: Scene2_1b
+---
+“No, they won’t agree with me, and they will be busy at Halloween.” You quickly dismiss the idea.
+
+Your parents won’t agree with allowing their only child to go to a place where no one knows the details, and they told you not to go there years ago. You don’t want to make your parents worry.
+
+On top of that, they have to deal with trick-or-treating from other kids at Halloween.
+
+<<jump Scene2_2>>
+===
+
+title: Scene2_1c
+---
+It seems that this is the only way, you are alone to explore that old and mysterious house.
+
+“It’s fine, Delphine. Nothing different from what happened in the past, and Mom and Dad won’t know that. You just need to open the door and take a look at the mirror.”
+
+You cheer yourself up in a low voice, hug the doll Del, then close your eyes and fall asleep.
+
+<<jump Scene2_2>>
+===
+
+title: Scene2_2
+---
+Halloween comes soon. 
+
+You change into your werewolf suit normally, say goodbye to your parents, and walk out of your house.
+
+Your friends are not here. You want to keep tonight as your secret adventure, so you told them that you have something to do and will join them later.
+
+“OK, Delphine, don’t worry. You didn’t lie to anyone. And it’s not hard work, just go to the old house and take another look. Then you can return to Halloween with your friends.”
+
+You mentally encourage yourself, and look towards the house at the end of the street, up on the hill.
+
+It looks the same as what it was a few years ago, still hard to find under the night sky. Many people on this street are used to ignoring this house, but you can’t.
+
+I’ll find out the truth about the house, you tell yourself.
+
+You walk slowly down the street to the door of the old house.
+
+Before ringing the doorbell, you go to the window and peek inside the house.
+
+There is a layer of dust on the window, which makes it hard to see what is going on inside.
+
+But you don’t see the lights or the glow of the fireplace. You think there might be no one in the house. At least not in the room you see through this window.
+
+Perhaps you can try ringing the bell.
+
+->Ring the bell.
+    <<jump Scene2_3>>
+===
+
+title: Scene2_3
+---
+No one answers, as you think. Then you open the door and enter the old house.
+
+The house is still the same as it was a few years ago, warm and humid. 
+
+You grope your way through the entryway, skirting the accumulation of dust and trash by the incoming moonlight.
+
+->Look for familiar sights.
+    <<jump House2_1>>
+===
+
+title: House2_1
+---
+
+You look around and find the side table from back then. The plastic bowl is still there, but there is no candy this time.
+
+“Didn’t anyone come here after that?” You ask.
+
+No one answers you, of course.
+
+Then you look up and realize that the magical mirror above the side table is gone.
+
+Where did the mirror go? Confused, you look around again.
+
+Moonlight shines through a room connected to the entryway.
+
+You faintly hear something.
+
+It’s like someone is talking, but they can’t make out what they are saying.
+
+“Anyone here?” You ask.
+
+The sound seems to be echoing in your ears, and it seems to appear directly in your mind.
+
+You decide to trust your ears, and walk toward the room where the sound appears to be coming from.
+
+You come to the front room.
+
+Fortunately, there are no broken floors, trash, or fallen wood chips here. But it still looks dated.
+
+A large carpet is placed in the middle of the room. 
+
+There are double sofa, single sofa, seats and coffee table surrounds it.
+
+Standing lamps stand on both sides of the double sofa. 
+
+Behind the sofa is the window you chose earlier when you were trying to take a look inside. 
+
+Although blurry, you can see the street outside through the glass and dust.
+
+All the furniture designs look dated, and they are all dusty.
+
+You look closer at the room and find a fireplace near the armchair.
+
+A mirror hangs over the fireplace.
+
+“!”
+
+You approach the fireplace excitedly. As you guess - it’s the mirror.
+
+There is not much dust on the mirror, and it looks much cleaner than other furniture here, looks like a newly bought one. But you trust yourself not to mistake the mirror.
+
+“What are you going to show me this time? Who is it related to?”
+
+You can’t stop guessing that in your mind, remembering those people close to you.
+
+->Think about your friends.
+    <<jump Vision2_1>>
+->Think about your parents.
+    <<jump Vision2_2>>
+->Think about yourself.
+    <<jump Vision2_3>>
+===
+
+title: Vision2_1
+---
+You see the reflection of yourself and your friends - Jules, Ash, and River. 
+
+You are standing on the side of the street in the reflection, but {$moves} is not standing with you.
+
+They are standing next to a car, and many adults are helping to carry various large boxes.
+ 
+“What happened?” You are nervous.
+
+Where is $moves going? Are they moving? Why are they moving, is it because they don’t like living on this street?
+
+Your thoughts are a mess.
+
+You are close friends, and you had hoped that you could always be close friends forever -
+
+But you never wished that you separate so early. You don’t even know how to contact each other after separation, and whether you can meet each other again.
+
+<<jump Vision2_4>>
+===
+
+title: Vision2_2
+---
+You see the reflection of yourself and your mom.
+
+You find yourself doing homework in your bedroom, and you don’t seem happy.
+
+Then the scene switches to the front room, where you see your mom rushing back from getting off work and preparing dinner for both of you with a tired face.
+
+“Where’s dad?” You wonder.
+
+Your parents are very loving, and your dad never let his wife worry about housework with fatigue.
+
+In your impression, whenever mom is tired, dad will always let her take a good break first and then deal with all kinds of things to do by himself.
+
+But you can’t find your dad in the reflection. Has he come back yet? Or has he gone so far that he cannot come back temporarily?
+
+Thinking becomes messy, and bad thoughts pop up one after another.
+
+You dare not continue to think.
+
+<<jump Vision2_4>>
+===
+
+title: Vision2_3
+---
+You see the reflection of yourself.
+
+It looks like you are in a new school, perhaps middle school.
+
+At lunchtime, other students gather with their friends to have lunch together. But you walk out of the classroom alone, take your lunch and find a quiet place where no one is around. Then start to enjoy it.
+
+You feel sad about that.
+
+“Where are my friends? Jules, Ash, and River?”
+
+You ask the mirror, but the mirror will not answer you.
+
+You start to think about where you are in the reflection and your age. Is it because you attend middle school and fail to make new friends? Or will you move in the future and live in a new place, so you can’t integrate into the new group? If you moved, how could you keep in touch with your current friends?
+
+There’s only silence in the room. All you can do is think.
+
+<<jump Vision2_4>>
+===
+
+title: Vision2_4
+---
+When you return to your senses, the mirror surface becomes blurred, and you can’t see anything.
+
+The sound you heard before is gone. 
+
+It seems that this place has really become an old house that has been abandoned for many years.
+
+<<jump House2_2>>
+===
+
+title: House2_2
+---
+You should be leaving, you realize immediately. Although what you have just seen makes it difficult for you to calm down.
+
+So you whisper to yourself, “You have to go, Delphine,” as if ordering yourself.
+
+You have to meet up with your friends, and can’t let them see what you are thinking.
+
+And you need to get some candy, or your parents will be worried when you get home.
+
+You leave this old house and close the door carefully when you leave.
+
+“I will come again.”
+
+You seem to be telling yourself, but also like saying to this house.
+
+<<jump Scene2_End>>
 ===
 
 title: Scene2_End

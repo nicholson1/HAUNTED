@@ -1,10 +1,22 @@
 ﻿title: Start
 tags:
 ---
+//variables established in Scene 1
 <<declare $jollyRanchersChosen to true>>
 <<declare $bff to "Ash">>
 <<declare $moves to "River">>
 <<declare $pal to "Jules">>
+
+//variables established in Scene 2
+
+//variables established in Scene 3
+
+//variables established in Scene 4
+<<declare $parenthoodRejection to false>>
+
+//variables established in Scene 5
+<<declare $hasKid to false>>
+
 Haunted Title Screen
 
 <<jump Scene1>>
