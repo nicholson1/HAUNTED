@@ -92,7 +92,20 @@ The pterodactyl offers you a tiny green hand and, with a slight whistle due to a
 
 title: Meetup5_3
 ---
+"It's nice to meet you, Merritt. I'm Delphine, your parent's friend."
 
+You point to the astronaut-fairy-cowboy beside you.
+
+"This is my kid, Daniel. And this is Daniel's grandma, Janet."
+
+Your mom, overcome by the proximity of not one but two adorable children, happily takes point in escorting Merritt and Daniel to the first trick-or-treating house.
+
+Trailing leisurely behind, you and $pal have a few minutes to catch up.
+
+->"How've you been, {$pal}?"
+    <<jump Meetup5_5>>
+->"I'm really glad this timing worked out."
+    <<jump Meetup5_6>>
 ===
 
 title: Meetup5_4
@@ -104,7 +117,589 @@ The two set out for the first trick-or-treating house without so much as a glanc
 Trailing leisurely behind, you and $pal have a few minutes to catch up.
 
 ->"How've you been, {$pal}?"
-
+    <<jump Meetup5_5>>
 ->"I'm really glad this timing worked out."
+    <<jump Meetup5_6>>
+===
 
+title: Meetup5_5
+---
+"You know, all things considered, not too bad," says {$pal}.
+
+They smile as up ahead Merritt furiously flaps their wings, so close and yet so far from lift-off.
+
+<<if $pal is "Ash">>
+    "I'm afraid having a kid's making me go a little soft. I cried at their first piano recital, and they're not even good yet."
+<<elseif $pal is "River">>
+    "I think Merritt might be a little weirder than I was, if you can believe that."
+<<else>>
+    "To be honest, I really am happier than I have been in a long time."
+<<endif>>
+
+"How've you been, Del?"
+
+->Tell the truth.
+    <<jump Meetup5_7>>
+->Lie pleasantly.
+    <<jump Meetup5_8>>
+===
+
+title: Meetup5_6
+---
+"Yeah!" {$pal} grins. "It's been so long. And now with a kid, Halloween really feels special again."
+
+"I haven't been back here in years," you say, as if {$pal} wasn't well-aware.
+
+"You're not the only one," they say. "I saw {$bff} earlier today."
+
+A chill runs through you. "{$bff}?"
+
+"Yeah. How have things been with you two since…" {$pal} doesn't need to finish the sentence.
+
+->Tell the truth.
+    <<jump Meetup5_7>>
+->Lie pleasantly.
+    <<jump Meetup5_8>>
+===
+
+title: Meetup5_7
+---
+"It's been ups and downs. I wish…"
+
+You trail off. 
+
+There before you is the house.
+
+<<jump House5_1>>
+===
+
+title: Meetup5_8
+---
+"Oh, you know. Busy, busy, busy. Not much time for-"
+
+You stop short.
+
+There before you is the house.
+
+<<jump House5_1>>
+===
+
+title: House5_1
+---
+The house is worn beyond what you ever thought possible.
+
+Skeletal -- stripped of shingles and siding, bare bones exposed.
+
+The front door is hanging wide, a slack and hungry mouth.
+
+"Del, no! Come on."
+
+->Approach the house.
+    <<jump House5_2>>
+===
+
+title: House5_2
+---
+"I'll be back in a minute," you say, pulling away from {$pal}. "Go catch up with the others."
+
+"Your mom's going to be so mad," {$pal} replies, and for a moment the two of you are kids again.
+
+"She won't even know. Tell her I stopped to talk to…somebody."
+
+<<if $hasKid is true>>
+    {$pal} looks at you skeptically, but then they go, following your mom, Merritt, and Daniel up the sidewalk, and towards the lighted houses.
+<<else>>
+    {$pal} looks at you skeptically, but then they go, following your mom and Merritt up the sidewalk, and towards the lighted houses.
+<<endif>>
+
+->Head up to the porch.
+    <<jump House5_3>>
+===
+
+title: House5_3
+---
+You climb the front steps, back onto the rolling, uneven porch.
+
+There's a hole in the floor that's new to you.
+
+Someone else was here at least once during all the time you were gone.
+
+Strangely, that's a comfort.
+
+->Go inside.
+    <<jump House5_4>>
+===
+
+title: House5_4
+---
+Though the walls are thinning and the roof is caving in, the air inside the house is warm and thick as ever.
+
+In the dim light, you see the dusty candy bowl sitting atop the side table. 
+
+Above, the frame of the mirror, empty except for one razor-edged shard of glass still held in place.
+
+->Look into the shard.
+    <<jump House5_5>>
+===
+
+title: House5_5
+---
+In this glass, you saw the very first vision -- you and {$bff} here in the house together.
+
+You peer into the mirror, looking for the next vision.
+
+Something to explain it all.
+
+->Find yourself there.
+    <<jump House5_6>>
+===
+
+title: House5_6
+---
+There is a face, not yours, but familiar.
+
+Older and so tired.
+
+{$bff}.
+
+Your face slips into the reflection too, and they smile.
+
+They look as if they're about to say something, but the moment lingers on in silence.
+
+There's promise in their eyes, and you imagine how this scene will feel when it comes to pass.
+
+You could tell them everything, make them hear.
+
+If it happens in the vision, it will always happen in real life.
+
+->Tell {$bff} the truth.
+    <<jump House5_7>>
+===
+
+title: House5_7
+---
+You clear your throat, already feeling a tightness there.
+
+"Sometimes it feels like nothing has gone right since the last time we were here. Or since I left for school. Or since we stopped talking."
+
+$bff's eyes are bright and attentive. There's something so familiar in their look, and the feeling unsettles you -- deja vu about something that hasn't happened yet.
+
+"I'm not the same person I was then, I don't think. The person I was with you. And I…miss her."
+
+You long so much to hear what they would say, what they will say when this moment comes.
+
+"I love who I used to be."
+
+->"And you loved her. I still love you."
+    <<jump House5_8>>
+->"And you destroyed her. I hate you."
+    <<jump House5_8>>
+->"And I forgot her. I forgot you too."
+    <<jump House5_8>>
+->"And you helped create her. I need you to help me find her again."
+    <<jump House5_8>>
+->"And she was happy with you. I want to be happy again."
+    <<jump House5_8>>
+===
+
+title: House5_8
+---
+"Delphine?"
+
+It's their voice, and not muted and warped like a vision, but right behind you.
+
+You turn, nauseated, and see $bff standing behind you, stricken.
+
+You recognize their expression. You have seen this once before.
+
+Your very first vision, all those years ago.
+
+"Delphine?"
+
+->Flee.
+    <<jump House5_9>>
+===
+
+title: House5_9
+---
+You scramble away, because to look too long would seal this moment into the canon of your life forever and the humiliation would be unendurable.
+
+There must be somewhere to hide, somewhere to regroup.
+
+Just for a little while, and then maybe you could face them.
+
+->Seek shelter.
+    <<jump House5_10>>
+===
+
+title: House5_10
+---
+Not upstairs, trapped between the stifled bedrooms and the chilly attic.
+
+Not the living room, with no way out but back to the front door.
+
+Not the kitchen, which always felt like the real residents were hovering on the far side of the door.
+
+But the very last place left -- the basement.
+
+->Descend.
+    <<jump Basement5_1>>
+===
+
+title: Basement5_1
+---
+You slip down the stairs, grateful not to hear footsteps following you.
+
+The basement is so dark, so awfully mind numbingly dark.
+
+The darkness presses against you, squeezing you out of existence.
+
+Perfect.
+
+->Feel your way in.
+    <<jump Basement5_2>>
+===
+
+title: Basement5_2
+---
+The moldering smell of the basement is oppressive, and you hear puddles splashing beneath your feet.
+
+It's more cave than structure.
+
+The walls are ribboned with mineral deposits, a persistent drip echoing around you.
+
+As your eyes adjust, you catch sight of something reflective just a few steps ahead of you.
+
+A puddle, deeper and wider than the others, disappearing back into nothingness.
+
+From somewhere, you can't tell where, a thin shard of light cuts into it, creating a reflection.
+
+->Go to the edge of the puddle.
+    <<jump Basement5_3>>
+===
+
+title: Basement5_3
+---
+You approach the puddle, kneeling at its edge.
+
+You have to position yourself just right to hover over the puddle without blocking the light.
+
+You gaze into its depths, and wish to see…
+
+<<if $hasKid is true>>
+    ->your child, Daniel.
+        <<jump Basement5_4a>>
+<<endif>>
+->your mother, Janet.
+    <<jump Basement5_4b>>
+->your...something, {$bff}.
+    <<jump Basement5_4c>>
+===
+
+title: Basement5_4a
+---
+Daniel is so young, and there's still so much more to come, maybe more than he can bear.
+
+What will become of him?
+
+<<set $vip to "kid">>
+
+<<jump Basement5_5>>
+===
+
+title: Basement5_4b
+---
+<<if $hasKid is false>>
+    Your mom is so old now, and you're all she has left.
+<<else>>
+    Your mom is so old now, and you and Daniel are all she has left.
+<<endif>>
+
+<<set $vip to "mom">>
+
+<<jump Basement5_5>>
+===
+
+title: Basement5_4c
+---
+Each time you see {$bff}, you make it worse and worse, tying the knot tighter and tighter around your hurt. 
+
+After what you said just now, how will your next meeting go?
+
+If there is one…
+
+<<set $vip to "bff">>
+
+<<jump Basement5_5>>
+===
+
+title: Basement5_5
+---
+The surface of the puddle wavers, and in its glassy muck you do see something…
+
+Swimming into focus, muddled but familiar.
+
+There's someone there.
+
+The face comes clear.
+
+It's just you.
+
+Just your face as it is now, grown so tired and worn beyond belief.
+
+There's nothing to see in you.
+
+There's nothing to see in you but decade on decade of accreted mistakes, squashed into the form of a person by sheer inertia.
+
+You meet your own eyes and recoil.
+
+The face in the puddle does the same.
+
+Not vision, only reflection.
+
+No future anymore.
+
+->Scream.
+    <<jump Basement5_6a>>
+->Punch the floor.
+    <<jump Basement5_6b>>
+->Kick the puddle.
+    <<jump Basement5_6c>>
+->Cry.
+    <<jump Basement5_6d>>
+===
+
+title: Basement5_6a
+---
+Not caring if {$bff} hears you, you summon forty years of frustration into one endless howl.
+
+You feel, briefly, like yourself again, the little werewolf who first stepped into this house.
+
+You don't stop screaming until your throat is raw.
+
+<<jump Basement5_7>>
+===
+
+title: Basement5_6b
+---
+You slam your fist into the concrete floor as hard as you can and instantly regret it, the force juddering back up into your shoulder (the bad one).
+
+Your knuckles are shredded and they hurt like hell.
+
+<<jump Basement5_7>>
+===
+
+title: Basement5_6c
+---
+You stand and step down hard into the puddle, shattering your reflection.
+
+The water goes spraying out in all directions, but when you step away, your mirror image slips back into view.
+
+<<jump Basement5_7>>
+===
+
+title: Basement5_6d
+---
+You sob, shaking until you feel sick.
+
+Your tears drop down into the puddle, feathering your miserable reflection a thousandfold.
+
+You cry until there's nothing more to feel.
+
+<<jump Basement5_7>>
+===
+
+title: Basement5_7
+---
+Spent, you curl up against the long-dead husk of the furnace, and rest your chin on your knees.
+
+What more is there to do, but wait?
+
+->Sit, for who knows how long...
+    <<jump Final5_1>>
+===
+
+title: Final5_1
+---
+A voice from upstairs cuts through the quiet and the dark like a silver knife.
+
+<<if $vip is "kid">>
+    It's Daniel's voice.
+    "Mom?"
+<<elseif $vip is "bff">>
+    It's {$bff}'s voice. 
+    "Del?"
+<<else>>
+    It's Mom's voice.
+    "Delphine?"
+<<endif>>
+
+->Let the knife find you. Call out to them.
+    <<jump Final5_3>>
+->Let the shadows swallow you. Stay quiet.
+    <<jump Final5_2>>
+===
+
+title: Final5_2
+---
+You listen to the footsteps above you. They're searching, but they haven't found you yet.
+
+You'll wait here just a little longer, in the warm dark.
+
+Just a little longer here, where it's safe…
+
+->Epilogue.
+    <<jump Epilogue_A>>
+===
+
+title: Final5_3
+---
+"I'm here!" Your voice is thinner and softer than a spider's web. "I'm coming back!"
+
+Your words float up into the darkness, and return to you in the voice of the person you love.
+<<if $vip is "kid">>
+    "Please, Mom! I'm scared…"
+<<elseif $vip is "bff">>
+    "Okay, Del, I'll be here!"
+<<else>>
+    "Alright, sweetie, I'll wait for you."
+<<endif>>
+
+->Now go to them.
+    <<jump Final5_4>>
+===
+
+title: Final5_4
+---
+You pull away from the darkness of the basement, move towards the thin light at the top of the stairs.
+
+Behind you there's a sharp sound like a mouse trap snapping shut on nothing.
+
+You don't look back.
+
+Only forward.
+
+<<if $hasKid is true>>
+    <<if $vip is "bff">>
+        ->Epilogue.
+            <<jump Epilogue_Ba>>
+    <<else>>
+        ->Epilogue.
+            <<jump Epilogue_Ca>>
+    <<endif>>
+<<else>>
+    ->Epilogue.
+        <<jump Epilogue_Ba>>
+<<endif>>
+===
+
+title: Epilogue_A
+---
+It's Halloween night. You hover at the edge of the demolition site, peering at the house's absence.
+
+Alone, you feel its disappearance acutely, the wind October-chilly and dry.
+
+Every year you've come back, waiting for the vision that will make it all make sense.
+
+And instead of answers, the house is shredded into nothing.
+
+<<if $agingAnxiety is true>>
+    You are as old as you always feared being, and as sad.
+<<endif>>
+
+There's nothing more to find here, and so, eventually, you depart.
+
+You avoid the pools of light cast by the streetlamps as you go.
+
+->The End.
+    <<jump FinalEnd>>
+===
+
+title: Epilogue_Ba
+---
+It's Halloween night. Well, Halloween dusk. 
+
+You get tired so easily now, you'll be in bed long before the kids finish their trick-or-treating rounds.
+
+<<if $agingAnxiety is true>>
+    You used to fear getting this old, but it's not all bad.
+<<endif>>
+
+You and {$bff} peer through the safety fence, into the demolition site.
+
+With its body stripped away, the house's foundation is bare and white, open to the sky like sun-bleached bones.
+
+<<jump Epilogue_Bb>>
+===
+
+title: Epilogue_Bb
+---
+<<if $bff is "Ash">>
+    "It's still scary as hell, even like this. But the awful enthralls, a little," says Ash.
+<<elseif $bff is "River">>
+    "I've been studying satellite maps, and I'm fairly certain this site is on a ley line, which would explain a lot," says River.
+<<else>>
+    "How much longer do we have to stay? It still creeps me out," says Jules.
+<<endif>>
+
+"I miss it," you admit, and your friend nods.
+
+"There was something there," they say. "Not something good, but something there."
+
+You look away from the house to smile at your friend. "Well, there's something here too."
+
+You offer them an arm and they take it. "Ready to go?"
+
+"I've been ready for years!" They laugh, and so do you.
+
+Arm-in-arm, the two of you shuffle off, leaving the house and its absence behind.
+
+There's still time for a scary movie before bed.
+
+->The End.
+    <<jump FinalEnd>>
+===
+
+title: Epilogue_Ca
+---
+It's Halloween night. Well, Halloween dusk. 
+
+You get tired so easily now, you'll be in bed long before the kids finish their trick-or-treating rounds.
+
+<<if $agingAnxiety is true>>
+    You used to fear getting this old, but it's not all bad.
+<<endif>>
+
+You and Daniel peer through the safety fence, into the demolition site.
+
+With its body stripped away, the house's foundation is bare and white, open to the sky like sun-bleached bones.
+
+<<jump Epilogue_Cb>>
+===
+
+title: Epilogue_Cb
+---
+"Your grandpa would love this," you tell Daniel. "He thought this place was a deathtrap waiting to happen."
+
+"Yeah, yeah, the tetanus, I remember." Daniel rolls his eyes, but he smiles too. "You almost ready to go?"
+
+"I miss it, a little," you admit. "The sureness."
+
+"I would too," Daniel says, offering you an arm. "But, you know, our house has its good points too. Walls, for example."
+
+"Those do come in handy this time of year." You take Daniel's arm. "Let's get home before the trick-or-treaters arrive. I want to see the costumes."
+
+"I put your werewolf ears by the door, so you'll be ready when the bell rings."
+
+Steady on Daniel's arm, you and he depart, leaving the house and its absence behind.
+
+If you're lucky, there'll be time for a scary movie before bed.
+
+->The End.
+    <<jump FinalEnd>>
+===
+
+title: FinalEnd
+---
+End Screen of Haunted
 ===

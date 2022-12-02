@@ -15,6 +15,7 @@ Before letting you out, Mom and Dad had just one condition,
 
 ->"That nasty old place at the end of the street."
     <<jump Scene1_2>>
+    //screen change here ideally?
 ===
 
 title: Scene1_2
@@ -33,6 +34,7 @@ A nasty old place.
     <<jump Scene1_3>>
 ->"No. It was boring."
     <<jump Scene1_3>>
+    //screen change back to generic here
 ===
 
 title: Scene1_3
@@ -45,6 +47,7 @@ You light out for the meet-up spot, werewolf tail streaming behind you.
 
 Mom took you to three Halloween stores before you found the tail and ears that matched to your satisfaction.
 
+//ideally screen change to street here
 Under the cool white moon of the streetlight, your three friends await --
 
 Ash - managing to look bored even under the white sheet of a no-effort ghost costume.
@@ -164,6 +167,7 @@ Halloween is so much better post-parents.
 
 As the four of you wander down the street, it catches your eye.
 
+//ideally screen change here
 Up on the hill, half-invisible against a black sky.
 
 The old house.
@@ -276,6 +280,7 @@ You pull away from the group, storming up the front walk of the old house.
 As you go, you hear them call out. "Delphine! Delphine, wait!"
 
 <<jump House1_1>>
+//ideally screen change here
 ===
 
 title: House1_1
@@ -288,6 +293,7 @@ When you look back, you see your friends nervously clustered at the bottom of th
 
 If you turn back now, you'll be a scaredy cat.
 
+//these could be clicks
 ->Look in the front window.
     <<jump House1_2a>>
 ->Knock on the front door.
@@ -302,6 +308,7 @@ The darkness is absolute in its severity. Except-
 
 A silver glint, light from the street below catching something just inside the doorway.
 
+//this could be a click
 ->Knock on the front door.
     <<jump House1_2b>>
 ===
@@ -316,6 +323,7 @@ This door is wide, its faded white paint chipped away to reveal the shards of da
 
 Far above your head, a tarnished door knocker in the shape of an hourglass, the ring pierced through its neck.
 
+//this could be a click
 ->Knock.
     <<jump House1_3>>
 ===
@@ -330,6 +338,7 @@ With a creak, it falls open, wide enough for you to enter.
 
 ->Go on.
     <<jump House1_4>>
+    //ideally screen change here
 ===
 
 title: House1_4
@@ -358,6 +367,7 @@ Proof of your escapade.
 
 (Obviously you wouldn't eat it. Probably has tetanus.)
 
+//this could be a click
 ->Take the candy.
     <<jump House1_6>>
 ===
@@ -367,6 +377,7 @@ title: House1_6
 You grab the candy, grateful your werewolf gloves protect your hands from the puddle of dust around it.
 
 As you toss the candy into your bucket, you glance up, into the mirror, and see-
+//screen change to vision here
 
 ->Yourself?
     <<jump House1_7>>
@@ -450,6 +461,7 @@ But the house sighs around you, a creak and a rush of air, as if someone was the
 You feel suddenly, terribly nauseous.
 
 You flee the house, tearing across the porch, down the steps, and back to the sidewalk.
+//screen change here
 
 Your friends cluster around you, all asking about what happened.
 
@@ -507,6 +519,7 @@ You snatch your hand away. "Don't eat that! It's ancient."
 
 ->Leave the house behind.
     <<jump After1_2>>
+    //screen change here
 ===
 
 title: After1_2

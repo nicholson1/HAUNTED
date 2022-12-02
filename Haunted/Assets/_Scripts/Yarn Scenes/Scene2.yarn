@@ -76,6 +76,7 @@ You cheer yourself up in a low voice, hug the doll Del, then close your eyes and
 
 title: Scene2_2
 ---
+//screen change here
 Halloween comes soon. 
 
 You change into your werewolf suit normally, say goodbye to your parents, and walk out of your house.
@@ -100,6 +101,7 @@ But you don’t see the lights or the glow of the fireplace. You think there mig
 
 Perhaps you can try ringing the bell.
 
+//this could be a click
 ->Ring the bell.
     <<jump Scene2_3>>
 ===
@@ -141,6 +143,7 @@ The sound seems to be echoing in your ears, and it seems to appear directly in y
 
 You decide to trust your ears, and walk toward the room where the sound appears to be coming from.
 
+//screen change here
 You come to the front room.
 
 Fortunately, there are no broken floors, trash, or fallen wood chips here. But it still looks dated.
@@ -171,6 +174,7 @@ There is not much dust on the mirror, and it looks much cleaner than other furni
 
 You can’t stop guessing that in your mind, remembering those people close to you.
 
+//screen change to vision here
 ->Think about your friends.
     <<jump Vision2_1>>
 ->Think about your parents.
@@ -189,7 +193,7 @@ They are standing next to a car, and many adults are helping to carry various la
  
 “What happened?” You are nervous.
 
-Where is $moves going? Are they moving? Why are they moving, is it because they don’t like living on this street?
+Where is {$moves} going? Are they moving? Why are they moving, is it because they don’t like living on this street?
 
 Your thoughts are a mess.
 
@@ -246,6 +250,7 @@ There’s only silence in the room. All you can do is think.
 
 title: Vision2_4
 ---
+//screen change here
 When you return to your senses, the mirror surface becomes blurred, and you can’t see anything.
 
 The sound you heard before is gone. 

@@ -1,6 +1,7 @@
 ﻿title: Scene3
 tags:
 ---
+//screen change here
 Leaves crunch beneath your feet as you make your way down the street. 
 You look over at {$bff}, swinging your pillowcase of candy as you walk. 
 This is the first Halloween where you're with {$bff} alone.
@@ -19,9 +20,9 @@ They look back at you, disbelief clear on their face.
 “All I'm saying is, if ghosts were real, I feel like we would have heard about it by now.”
 
 ->“It's real, I promise!”
-<<jump Scene3_3c>>
+    <<jump Scene3_3c>>
 ->“You're just jealous that the ghosts chose me and not you.
-<<jump Scene3_3c>>
+    <<jump Scene3_3c>>
 ===
 title: Scene3_3c
 ---
@@ -44,6 +45,7 @@ You adjust your werewolf-paw gloves - a much-appreciated upgrade of recent years
 ===
 title: Scene3_3d
 ---
+//screen change here
 You carefully creep up the creaky steps.
 As you cross the threshold, you feel the crunch of broken glass beneath your feet.
 
@@ -67,6 +69,7 @@ Above the fireplace, only the frame of the mirror from your last visit remains. 
 
 {$bff} looks up at you with anticipation. “Why don't we do a little exploring?”
 
+//this could be a click
 ->Stay downstairs where it feels safer.
     <<jump Scene3_GROUND1>>
 ->Be brave and explore further.
@@ -74,6 +77,7 @@ Above the fireplace, only the frame of the mirror from your last visit remains. 
 ===
 title: Scene3_GROUND1
 ---
+//screen change here
 <<set $groundFloorExplored to true>>
 Your parents' years-old warnings about tetanus ring in your mind.
 “I don't know,” you say uneasily, “I'm not sure if this place is safe.”
@@ -99,10 +103,11 @@ But beneath all that fear, a part of you has come to crave the mystery it provid
 You reach the end of the hall, pushing open the final door. As you step into the kitchen, a chill goes down your spine. This is the place. Your vision is in here.
 
 ->Explore the kitchen.
-<<jump Scene3_KITCHEN>>
+    <<jump Scene3_KITCHEN>>
 ===
 title: Scene3_KITCHEN
 ---
+//screen change here
 This whole house is preserved, manicured, immaculate except for the layers of dust. This kitchen almost feels like stepping into a different universe.
 
 Pots clutter the stove. You can almost imagine them rattling and boiling making food for the residents of this old house.
@@ -149,6 +154,7 @@ You grip the banister for dear life, following {$bff} onto the upstairs landing.
 ===
 title: Scene3_UPSTAIRS_2
 ---
+//screen change here
 You creep steadily through the upstairs, keeping an eye out for the supernatural.
 
 The dim hallway lined with old portraits. The study with the taxidermied deer head. The conservatory, chock full of dead and decaying plants. None of these places catch your eye.
@@ -168,6 +174,8 @@ You reach the end of the hall, pushing open the final door. As you step into the
 ===
 title: Scene3_BEDROOM_1
 ---
+//screen change here
+
 The bedroom, like the rest of the house, is immaculately preserved.
 If it weren't for the dust, you'd think the owners had just left for vacation.
 
@@ -192,6 +200,7 @@ The mirror ripples and shifts, your reflections fading away.
 ===
 title: Scene3_FUTUREVISION_1
 ---
+//screen change to vision here
 When the reflection settles, you still see two figures before you. You can't see their faces, but something in you just knows it's you and {$bff}. 
 You're both a little taller in the vision, a little more worn out.
 
@@ -221,6 +230,7 @@ Back in the house, you sigh shakily.
 ===
 title: Scene3_GROUND_7
 ---
+//screen change here
 You are yanked back into reality. Your heart is pounding in your chest. You feel like you just ran a mile.
 You hear the thumping of footsteps above you. They move across the hall. Down the stairs. Out the front door.
 
@@ -239,6 +249,7 @@ They shake their head furiously. “It's not even real. I'm being pranked or som
 ===
 title: Scene3_UPSTAIRS_6
 ---
+//screen change here
 The two of you stare at each other in shock. Your heart is racing. You feel like you just ran a mile.
 The two of you rush out of the house. The cool nighttime air is a relief as you step onto the porch.
 

@@ -15,9 +15,11 @@ tags:
 
 //variables established in Scene 4
 <<declare $parenthoodRejection to false>>
+<<declare $agingAnxiety to false>>
 
 //variables established in Scene 5
 <<declare $hasKid to false>>
+<<declare $vip to "bff">>
 
 Haunted Title Screen
 
