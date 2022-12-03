@@ -16,6 +16,8 @@ tags:
 //variables established in Scene 4
 <<declare $parenthoodRejection to false>>
 <<declare $agingAnxiety to false>>
+<<declare $relationshipConfidence to true>>
+<<declare $plushieRecognition to true>>
 
 //variables established in Scene 5
 <<declare $hasKid to false>>

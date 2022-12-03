@@ -1,9 +1,495 @@
 ﻿title: Scene4
 tags:
 ---
+The home you grew up in is now littered with moving boxes. It had been a while since you visited, and your childhood home was one aspect of many in your life that you took for granted the impermanence of. 
 
+Everything in your life is shifting. There's nothing to cling onto, nothing to hold you steady.
+You're adrift at sea without a lifevest… metaphorically, of course. 
+Part of you would prefer being lost to the sea over dealing with a move.
+
+Moving houses is a pain under the best of circumstances. Not all moves necessitate bathroom breaks to dry your tears. 
+Having a catch in your throat feels so silly, but you can't help it. How could you not feel emotional over a chapter of your life decisively ending?
+
+It doesn't help you have so much else going on. There's a lot weighing on you, especially…
+
+->...your recent breakup.
+    <<jump Scene4_Move_2a>>
+->...your parents’ nasty divorce.
+	<<jump Scene4_Move_2b>>
+->...your uncertainty and other weird feelings post-graduation.
+    <<jump Scene4_Move_2c>>
 ===
+title: Scene4_Move_2a
+---
+The breakup is affecting you more than you'd like. It feels so stupid. {$bff} was as amicable as can be. 
+Compared to your parents' nightmare of a divorce, this was nothing. Why can't you move on?
 
+Maybe you were a silly hopeless romantic fool for ever imagining your wedding with them.
+However, you two stayed together through the entirety of college. Doesn't that count for something?
+
+Apparently, it doesn't. You know deep down it's no good to force a relationship that wasn't meant to be.
+Part of you wishes it could have been meant to be. “Silly hopeless romantic fool” is right. It may be melodramatic, but you're not fully convinced you'll ever find love again. 
+
+Suddenly, it dawns on you that you've been sitting on a toilet with its lid down for way too long.
+
+->Force yourself to stop thinking about this.
+    <<jump Scene4_Move_3>>
+===
+title: Scene4_Move_2b
+---
+You're a fully grown adult. Why do you feel like a child whose home is being split in two? I guess it doesn't help that it's been such a mess.
+
+Deep down, you're thankful you're not a child needing to worry about custody. You're not sure you'd want to pick either of them. 
+Your relationship with your parents is, at times, complicated… and that's putting it lightly. On the flip side, you're not sure you have any right to complain.
+
+Suddenly, it dawns on you that you've been sitting on a toilet with its lid down for way too long.
+
+->Force yourself to stop thinking about this.
+    <<jump Scene4_Move_3>>
+===
+title: Scene4_Move_2c
+---
+It feels like you blinked, and suddenly, you graduated. How could each individual semester feel so slow, while college overall passed by in a flash? 
+You didn't really make the most of it, academically or socially.
+
+Now what? It was convenient when this was your go-to answer when people asked what you had going on in your life. 
+You're not a student anymore. You have to figure out your life now. If you don't, people will judge you. You're sure of it.
+
+Suddenly, it dawns on you that you've been sitting on a toilet with its lid down for way too long.
+
+->Force yourself to stop thinking about this.
+    <<jump Scene4_Move_3>>
+===
+title: Scene4_Move_3
+---
+You force yourself to leave the privacy of the restroom. Mom is slumped on the couch. Boxes or no, you haven't touched the heavier furniture yet. 
+
+“So, did you want to, uh…” You almost lose track of your train of thought. “Did you want to keep packing up?”
+
+“Absolutely not,” your mom answers.
+
+“Thank fuck. I didn't wanna be the first to say it.”
+
+“Language, Delphine!” Mom admonishes.
+
+“You do remember I've been legally considered an adult for nearly five years now, right, Mom? How old do I have to be to get f-bomb privileges?”
+
+“I guess I'll humor that, you snarky brat. Maybe when you're 30… or whenever you become a mom. Whichever comes first.”
+
+“Me, a mom?” The mental image catches you off guard. 
+
+->Not anytime soon.
+    <<jump Scene4_Move_4a>>
+->Not ever.
+    <<jump Scene4_Move_4b>>
+===
+title: Scene4_Move_4a
+---
+“Maybe I'll have kids, with a major emphasis on maybe. But it won't be anytime soon! Like, me turning 30 would definitely come first.”
+
+“Smart thinking,” your mom replies. “Make sure you plan it out. You were planned, but I can't say the same for some of my friend's kids.”
+
+You're not sure what to make of her statement. 
+As much as you want to consider being planned a comfort, you can't. You can't shake the feeling they didn't plan for a kid like you. 
+
+Your mom interrupts this spiraling train of thought with a loud yawn.
+
+->Yawn as well, unable to resist the contagiousness.
+    <<jump Scene4_Move_5>>
+===
+title: Scene4_Move_4b
+---
+<<set $parenthoodRejection to true>>
+
+“Absolutely not. I am never having kids. And I mean never EVER.”
+You accidentally shout the last word. The idea of you being a mom doesn't sit right on so many levels.
+
+“You certainly feel strongly about this, don't you?” 
+You can't read your mom's tone. Nonetheless, it's another thing that doesn't sit right.
+“Make sure you don't have any accidents, then. You were planned, but I can't say the same for some of my friend's kids.”
+
+You're not sure what to make of her statement. 
+As much as you want to consider being planned a comfort, you can't. You can't shake the feeling they didn't plan for a kid like you. 
+
+Your mom interrupts this spiraling train of thought with a loud yawn.
+
+->Yawn as well, unable to resist the contagiousness.
+    <<jump Scene4_Move_5>>
+===
+title: Scene4_Move_5
+---
+“Moving is exhausting,” your mom remarks, yawning again.
+
+“You're telling me…” 
+
+“I think I might nap on this couch… I'll probably be an hour or so, okay?”
+
+You don't understand how she can only nap for an hour. For you, naps sunk three hours of your time at a bare minimum.
+
+“Okay. I might go take a walk.”
+
+“Isn't it chilly out?”
+
+“I'll be fine.” Even if it's too cold, you need some fresh air. You're starting to go stir crazy.
+
+->Venture outside.
+    <<jump Scene4_Walk_1>>
+===
+title: Scene4_Walk_1
+---
+You almost forget it's Halloween. It's too early for there to be any trick-or-treaters. 
+Out of nowhere, you start wondering where your werewolf costume ended up. 
+
+Part of you misses it. You almost wish you could straight up transform into a werewolf. 
+Werewolf you wouldn't stew in heartbreak, angst over your parents' divorce, or freak out over an uncertain future. 
+
+Maybe it's more accurate to say you wish you could be a kid again. You wish you could go back  to that carefree time. 
+Hanging out with your friends, seeing what costumes they picked out, getting butterflies over {$bff}… it feels so long ago now. 
+You miss when your biggest concern of the night was what candy to eat first.
+
+You get so caught up in your own thoughts, you don't realize you've stopped walking.
+
+->Keep walking.
+    <<jump Scene4_Walk_2>>
+===
+title: Scene4_Walk_2
+---
+You soon realize your rose-tinted glasses in looking to the past. It wasn't all rainbows and sunshine. 
+You were lucky to have a mostly happy childhood, but even that point in your life wasn't so mindlessly simple.
+
+It's more like you long to return to a time that never existed, never could exist. There's no point in this.
+
+->Reorient yourself to the present.
+    <<jump Scene4_Walk_3>>
+===
+title: Scene4_Walk_3
+---
+Why bother thinking of the past? It's done now. 
+Why worry about the future? It isn't here yet. The present is all you have.
+
+Ah, yes, the present. What are you experiencing right this moment? 
+Well, for one, the cold is nipping at your skin. You're walking nowhere in particular. Where exactly did you intend on going?
+
+Deep within your soul, you know exactly where you're headed.
+
+->Head towards the house.
+    <<jump Scene4_Walk_4>>
+===
+title: Scene4_Walk_4
+---
+Although trick-or-treating hasn't started yet, you've still seen a few stragglers in costume. 
+Today is a Saturday - a dream come true for any children getting into the Halloween spirit. 
+You feel jealous, followed by immediately feeling ridiculous for that jealousy.
+
+A couple of androgynous teenagers across the road catch your eye. One has their arm around the other. The duo is headed in the opposite direction. 
+They were likely juniors or seniors in high school, if you had to guess. 
+
+The taller of the two wears a werewolf costume, stirring up your nostalgia more than ever. It puts your old costume to shame.
+
+Their partner wears a cat ear headband over a plain sheet with whiskers drawn on. They also wore cat paws and a tail. 
+You're impressed at how they've combined two stereotypical Halloween costumes in a way you've never seen before.
+
+->Compliment their costumes.
+    <<jump Scene4_Walk_5a>>
+->Keep walking.
+    <<jump Scene4_Walk_5b>>
+===
+title: Scene4_Walk_5a
+---
+You yell across the street, “Nice costumes, you two!” 
+They both turn their heads to look at you. You assume from their confused glances that they hadn't heard you. “Looking super cool!”
+
+You realize hearing may not have been an issue. The werewolf gives you a dirty look. 
+You can't tell what facial expression the ghost cat is making… probably for the best.
+
+You're pretty sure you hear one say to the other, “Isn't she, like, 30?” 
+You want to tell yourself you misheard, that maybe it wasn't about you. Deep down, you know that isn't true.
+
+Still in your early 20s and already being mistaken for 30. You're not sure how that makes you feel…
+
+->Tell yourself you're still young.
+    <<jump Scene4_Walk_6a>>
+->Try to get used to the idea of getting older.
+    <<jump Scene4_Walk_6b>>
+===
+title: Scene4_Walk_5b
+---
+You decide not to bother the couple. They're maybe five years younger than you, but every year counts at this weird stage in life where so much changes in so little time.
+
+You don't want to be the awkward adult commenting on their costumes. Even if it was meant innocently, no need to yell across the street. 
+In any case, you can't deny that seeing those teenagers invoked an odd sense of deja vu.
+
+You miss your werewolf costume more than ever. Regrettably, it's not the only part of your old life you catch yourself missing. 
+Your feelings would be complicated enough with just the werewolf costume reminding you of a younger version of yourself…
+
+…why does their (somewhat literal) puppy love have to bring back memories of you and {$bff}? You try not to think about it too much. That is a random teenager, not a younger version of {$bff}.
+
+<<if $bff is "Ash">>
+    Even if the white sheet haphazardly draped atop their head reminds you of them, it's not.
+<<elseif $bff is "Jules">>
+    Even if the adorable cat accessories remind you of them, it's not.
+<<else>>
+    Even if the sheer weirdness of their costume combination reminds you of them, it's not. 
+<<endif>>
+
+Part of you wonders if you'll ever find love again.
+
+->Of course you'll find love again.
+    <<jump Scene4_Walk_6c>>
+->Well, no shame in being single…
+    <<jump Scene4_Walk_6d>>
+===
+title: Scene4_Walk_6a
+---
+<<set $agingAnxiety to true>>
+
+Sure, you're an adult who graduated college, but you're still young. You're not going to be 30 anytime soon. 
+You may not be a teenager anymore, but if anything, that's a relief.
+
+Might as well enjoy your relative youth while you still have it, right? 
+Yes, that's right. That's why you let instinct guide you, why you're headed towards the house. 
+It's silly for you, a legal adult, to still be so entranced by it, but who wouldn't be?
+
+->Walk the rest of the way to the haunted house.
+    <<jump Scene4_House_1>>
+===
+title: Scene4_Walk_6b
+---
+<<set $agingAnxiety to false>>
+
+Getting used to the idea of  aging is easier said than done. That being said, it would benefit you to give it your best shot. 
+After all, it's inevitable… unless you die. You're pretty sure that's not going to happen anytime soon.
+
+You may not be 30 now, but eventually, you will be. The thought wigs you out, but you try not to shut it out. 
+Sitting with the idea is easier said than done, but you do. You let the thought linger in your mind as you make your way to the haunted house.
+
+->Walk the rest of the way to the haunted house.
+    <<jump Scene4_House_1>>
+===
+title: Scene4_Walk_6c
+---
+<<set $relationshipConfidence to true>>
+
+Of course you'll find love again someday. {$bff} may have been your first love, but that doesn't mean they'll be your only love. 
+There's a whole world outside the people you knew in elementary school, high school, college…
+
+You're not entirely sure when you'll find love again. You're even less sure what type of person you'll end up with next. 
+Will they be similar to {$bff}? Maybe your next partner will be their total opposite. What would that look like? 
+
+<<if $bff is "Ash">>
+    You guess that hypothetical person would be someone sincere, heartfelt. They could go a single sentence without dripping sarcasm.
+<<elseif $bff is "River">>
+    You guess that hypothetical person would be someone approachable, easy to understand. With that person, what you see would be what you get.
+<<else>>
+    You guess that hypothetical person would be a bit of a rebel. That person would definitely be no pushover.
+<<endif>>
+
+You can't deny that you miss the feeling of being in love. It feels silly when your face grows hot at thought, but you can't help it. 
+Flustered and disoriented, you push on and continue heading towards the haunted house.
+
+->Walk the rest of the way to the haunted house.
+    <<jump Scene4_House_1>>
+===
+title: Scene4_Walk_6d
+---
+<<set $relationshipConfidence to false>>
+
+It embarrasses you that you struggle to imagine yourself dating anyone besides {$bff}. However, could anyone really blame you? They were you first, and as of now, only love. 
+
+Maybe it was silly to think your high school sweetheart would be your soulmate too. It's not like that came from nothing, though. 
+Five years is nothing to scoff at! Unfortunately, it made the end hurt even more.
+
+You realize that soulmates may not even be real. It's difficult to say whether you truly believe it or not. You certainly believed yours was {$bff} for a while. 
+There's no point in thinking about them now. You try to push the thought out of your head, continuing to head to the house.
+
+->Walk the rest of the way to the house.
+    <<jump Scene4_House_1>>
+===
+title: Scene4_House_1
+---
+Here it is again… an eerily familiar sight. Part of you thought you'd never come back. The other part of you knew you were always destined to return to this house.
+
+A decent amount has changed in the past five years, but you can't put your finger on it. You thought growing up would mean you'd be less scared, but you still find yourself shivering. 
+
+Creeped out or not, you refuse to be stopped. You're not a child anymore, after all. 
+
+<<if $agingAnxiety is false>>
+    No, you're an adult now… and that's okay.
+<<elseif $agingAnxiety is true>>
+    No, you  haven't been one in several years now… how bizarre.
+<<endif>>
+
+->Go inside.
+    <<jump Scene4_House_2>>
+===
+title: Scene4_House_2
+---
+In the spirit of not being a frightened kid anymore, you resolve to try something new. That's right - you're gonna go to the attic! 
+Any other time you came here, you would have been way too scared to go up there.
+
+The stairs creak with each step. The noise feels like it gets unnervingly louder as you ascend. You worry the old wood will cave through. 
+Nonetheless, you keep walking. Child you would be so proud… and terrified.
+
+->Climb the rest of the stairs.
+    <<jump Scene4_House_3>>
+===
+title: Scene4_House_3
+---
+You don't realize you're holding your breath until you climb the last stair and exhale. Like the house you came from, there are boxes strewn about the attic. 
+
+Your initial browsing reviews nothing but boxes littered throughout the floor, alongside a generous helping of dust bunnies. Sitting atop one of the boxes, however, is a decisively unbox-like shape.
+
+Almost as if guided by instinct, you reach towards this not-box.
+
+->Pick up the mysterious object.
+    <<jump Scene4_House_4>>
+===
+title: Scene4_House_4
+---
+It's soft… soft in a very particular way. Your heart races at the oddly familiar texture. It's too dark to see much of anything, so you step towards the light of the window. Upon holding the mysterious soft object closer to you…
+
+…your heart skips a beat. Del the dolphin! How did your childhood plushie end up here? You never took Del here, did you?
+
+Suddenly, countless memories come rushing back to you. In moments of uncertainty, this dolphin was your confidant. 
+It's likely Del the dolphin knows at least one or two secrets not a living soul on this earth knows. 
+
+Did you bring Del here sometime and forget? Did someone else bring her here? Who would do that? Would {$bff} do such a thing? Probably not.
+
+<<if $bff is "Jules">>
+    They were far too kind to pull a prank like that on you.
+<<elseif $bff is "Ash">>
+    It's not like they were above messing with you, but you're not sure this was their style. 
+<<else>>
+    As weird as they are, this is an entirely different brand of weird.
+<<endif>>
+
+There's a chance it's the same brand of dolphin. As special as Del may have been to you, you doubt the plushie your parents gifted you all those years back was one-of-a-kind. 
+That explanation makes perfect sense… why don't you believe it?
+
+->Hold the dolphin plushie closer.
+    <<jump Scene4_House_5a>>
+->Put down the dolphin plushie.
+    <<jump Scene4_House_5b>>
+===
+title: Scene4_House_5a
+---
+<<set $plushieRecognition to true>>
+
+Something possesses you - not literally, you're pretty sure-  to clutch the dolphin plushie closer to your chest. Perhaps most mystifyingly, you press your nose against the soft fabric and take in a whiff.
+
+Scent is the sense strongest associated with memory. You're pretty sure that trivia fact is what guided that decision. 
+When you get a noseful of dust and begin coughing, you start to doubt your own logic a little more.
+
+You can't shake the idea that this isn't just some random dolphin plushie. No… this is Del. You chuckle to yourself at your childhood decision to name the dolphin after yourself. 
+You can't tell if this is evidence kid you was self-centered or horrifically uncreative. Worse yet, it could be evidence of both.
+
+Eventually, you put Del back where you found her. You could torture yourself all night wondering how she ended up there, but you have more important things to do.
+
+Granted, you aren't doing any of those important things now. You're merely gazing out the attic window of a haunted house, one that almost feels like a second home from your dreams… or your nightmares.
+
+->Look out the window.
+    <<jump Scene4_House_6>>
+===
+title: Scene4_House_5b
+---
+<<set $plushieRecognition to false>>
+
+There's no use overthinking this dolphin plushie. Anything in this attic is surely haunted as the house containing it. Whether or not it's Del the dolphin, you're pretty sure that plushie is a cursed object now.
+
+Is thinking that silly? Perhaps. Either way, you're not about to risk it. 
+When you catch yourself shivering again, you tell yourself it's because of the cold. You're definitely not scared or anything.
+
+You step towards the window, stepping into the light of a beautiful sunset. Not that you stepped out of the dark because you were afraid… of course not…
+
+You didn't set down the plushie because of fear. Okay, maybe it's a little motivated by fear. More importantly, however, you want to keep yourself in the present. 
+You could spend hours reminiscing on memories of a single plushie alone, but you have more important things to do.
+
+Granted, you aren't doing any of those important things now. You're merely gazing out the attic window of a haunted house, one that almost feels like a second home from your dreams… or your nightmares.
+
+->Look out the window.
+    <<jump Scene4_House_6>>
+===
+title: Scene4_House_6
+---
+You gaze into the distance, taking in the sight of your childhood neighborhood beneath a setting sun. It overwhelms you with emotions you struggle to describe. 
+Maybe a pithy word to describe how you're feeling exists in another language, but all you know is English, and you're at a loss.
+
+You pull yourself back, literally and metaphorically zooming in. Instead of taking in an entire community, you focus solely on your own faintly mirrored reflection.
+ Mirrors always gave you mixed feelings, but it's hard to feel insecure when your reflection is too translucent to see in much detail.
+
+->Next.
+    <<jump Scene4_House_7>>
+===
+title: Scene4_House_7
+---
+You blink a couple of times, and your reflection in the mirror starts to ripple. After jumping back in shock and rubbing your eyes, it was still happening. It shows a picture much clearer than any window should be able to reflect back.
+
+After the image blurs and distorts, it arranges itself into a crystal clear view of an old lady on a rocking chair. 
+
+“I wanted to see MY future, not some random old lady. What is that, my grandma?” All of your grandparents died before you were born. You hadn't seen enough pictures to recognize.
+
+Suddenly, you realize…
+
+It's you.
+
+->It's… me?
+    <<jump Scene4_House_8>>
+===
+title: Scene4_House_8
+---
+That old lady is YOU. Not some random lady. Not your grandma.
+
+Sure, it's several decades down the road, but there's no denying it. You're probably in your sixties here, but there's still a lively spark in your eyes. Old you would never be boring, after all.
+
+<<if $agingAnxiety is false>>
+    If you have to grow old someday, this isn't the worst way it could happen.
+<<elseif $agingAnxiety is true>>
+    You don't like it one bit. You're not supposed to be that old. It doesn't feel right.
+<<else>>
+    You're uncertain how seeing yourself at this age makes you feel.
+    All you know is that it's not something you're going to be able to forget anytime soon.
+<<endif>>
+
+->Next.
+    <<jump Scene4_House_9>>
+===
+title: Scene4_House_9
+---
+You also can't help but notice that you're alone.
+
+<<if $relationshipConfidence is false>>
+    It's hard to pretend like it doesn't feel like a kick in the chest. That said, it doesn't surprise you one bit.
+    Even if you stayed single until the grave, hopefully you had other people to fill the void.
+<<elseif $relationshipConfidence is true>>
+    You're sure the love of your life is right nearby, whoever they are. Assuming they didn't die first, at least.
+    Considering all the possibilities is more of an emotional rollercoaster than you're prepared for.
+<<else>>
+    Realistically, could you expect anything different? You're genuinely not sure.
+    Deep down, you know there are more important details to focus on if you make it that far.
+<<endif>>
+
+“Is this really it?” you ask to no one in particular.
+“I wasn't sure whether I was expecting a vision at all, but I kinda wanted to see more than Little Old Lady me sitting on a rocking chair…”
+
+->Next.
+    <<jump Scene4_House_10>>
+===
+title: Scene4_House_10
+---
+The image stays to older Delphine rocking back and forth. Before fading back to the previous reflection, you swear older you shakes her head at you, laughing as she disappears.
+Does she know you wanted more? Is she mocking you for expecting anything else? 
+
+Are you losing your mind? You realize you're staring intently at your own barely there reflection in the window. The image of you in your twilight years is burned into your brain.
+Yet, only your current aged self remains visible. This is the most alone you've ever felt while in this house.
+
+<<if $plushieRecognition is false>>
+    In this lonely, cramped attic, there's only you and the dolphin plushie.
+<<elseif $plushieRecognition is true>>
+    In this lonely, cramped attic, there's only you and a dolphin plushie that a piece of your soul feels infused within, and not just because she shares your name.
+<<endif>>
+
+<<jump Scene4_End>>
+===
 title: Scene4_End
 ---
 ->Go on.
