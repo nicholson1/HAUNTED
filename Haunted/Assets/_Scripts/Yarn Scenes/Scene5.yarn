@@ -593,6 +593,8 @@ Only forward.
 <<endif>>
 ===
 
+//should I add another epilogue for if Mom is your $vip???
+
 title: Epilogue_A
 ---
 It's Halloween night. You hover at the edge of the demolition site, peering at the house's absence.
@@ -646,6 +648,7 @@ title: Epilogue_Bb
 
 "There was something there," they say. "Not something good, but something there."
 
+//might make this line reactive to relationship anxiety in scene 4
 You look away from the house to smile at your friend. "Well, there's something here too."
 
 You offer them an arm and they take it. "Ready to go?"
@@ -690,6 +693,8 @@ title: Epilogue_Cb
 "Those do come in handy this time of year." You take Daniel's arm. "Let's get home before the trick-or-treaters arrive. I want to see the costumes."
 
 "I put your werewolf ears by the door, so you'll be ready when the bell rings."
+
+//maybe put in a line that's reactive to relationship anxiety from scene 4
 
 Steady on Daniel's arm, you and he depart, leaving the house and its absence behind.
 
