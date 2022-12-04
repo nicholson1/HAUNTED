@@ -226,12 +226,12 @@ Back in the house, you sigh shakily.
 <<if $groundFloorExplored is false>>
     {$bff} squeezes your hand. You glance away from the mirror to gauge their reaction, and just like that, the moment is broken.
     ->The vision is over.
-	    <<jump Scene3_GROUND_7>>
+	    <<jump Scene3_UPSTAIRS_6>>
 <<else>>
-    You reach toward the water, like if you could muddle vision, it couldn't possibly come true.
+    You reach toward the water, like if you could muddle the vision, it couldn't possibly come true.
     The moment your hand touches the water, the image dissipates, like it was never even there.
     ->The vision is over.
-	    <<jump Scene3_UPSTAIRS_6>>
+	    <<jump Scene3_GROUND_7>>
 <<endif>>
 ===
 title: Scene3_GROUND_7

@@ -78,7 +78,7 @@ title: Meetup5_2
 
 The pterodactyl offers you a tiny green hand and, with a slight whistle due to an absent front tooth, introduces themself as Merritt.
 
-"My kid," adds $pal, laughing at Merritt's frown. "Sorry, sorry -- the pterodactyl I rescued from Jurassic Park."
+"My kid," adds {$pal}, laughing at Merritt's frown. "Sorry, sorry -- the pterodactyl I rescued from Jurassic Park."
 
 "Fank you," hisses Merritt.
 
@@ -101,7 +101,7 @@ You point to the astronaut-fairy-cowboy beside you.
 
 Your mom, overcome by the proximity of not one but two adorable children, happily takes point in escorting Merritt and Daniel to the first trick-or-treating house.
 
-Trailing leisurely behind, you and $pal have a few minutes to catch up.
+Trailing leisurely behind, you and {$pal} have a few minutes to catch up.
 
 ->"How've you been, {$pal}?"
     <<jump Meetup5_5>>
@@ -115,7 +115,7 @@ Your mom's delighted interest in Merritt's reptilian ensemble sparks a lengthy d
 
 The two set out for the first trick-or-treating house without so much as a glance back at you or {$pal}.
 
-Trailing leisurely behind, you and $pal have a few minutes to catch up.
+Trailing leisurely behind, you and {$pal} have a few minutes to catch up.
 
 ->"How've you been, {$pal}?"
     <<jump Meetup5_5>>
