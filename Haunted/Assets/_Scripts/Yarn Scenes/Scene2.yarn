@@ -6,11 +6,11 @@ Halloween night. Well, Halloween afternoon.
 
 You lie in your bed and look at the bedroom ceiling. The Halloween experience three years ago comes back to your mind.
 
-You look at the dolphin doll beside the bed which you gave the same name as yours, and feel like it is smiling at you.
+You look at the dolphin plushie which you gave the same name as yours, and feel like it is smiling at you.
 
 “What do you think, Del?”
 
-“What I saw in the mirror… What happened in that house, could that be real?” you ask the doll.
+“What I saw in the mirror… What happened in that house, could that be real?”
 
 “Was that my imagination? Or did I find a magical mirror?”
 
@@ -18,9 +18,11 @@ Your parents and friends didn’t believe what you were saying, but your gut tol
 
 More importantly…
 
-“You know, Del? It would be so amazing if I found a magical mirror.”
+“You know, Del, it would be so amazing if I found a magical mirror.”
 
-Like the one in Snow White, even if this mirror does not talk to you nor answer your questions, the feeling of discovering a hidden secret excites you.
+Like the one in Snow White...
+
+Even if this mirror does not talk to you nor answer your questions, the feeling of discovering a hidden secret excites you.
 
 “I need to go there again this Halloween,” you tell Del.
 
@@ -50,6 +52,8 @@ Your friends have never believed your story about seeing {$bff} in the house wit
     Every time you mention it, River explains that a location highly charged with negative energy could easily cause hallucinations, especially in the psychically weak mind of a child.
 <<endif>>
 
+You resent this.
+
 <<jump Scene2_1c>>
 ===
 
@@ -57,9 +61,9 @@ title: Scene2_1b
 ---
 “No, they won’t agree with me, and they'll be busy tonight.” You quickly dismiss the idea.
 
-Your parents won't allow their only child into that tetanus trap, they've made that more than clear.
+Your parents won't allow their only child into that tetanus trap, they've made that more than clear already.
 
-On top of that, they have to deal with trick-or-treating from other kids at Halloween.
+On top of that, they have to deal with trick-or-treating from other kids tonight.
 
 <<jump Scene2_1c>>
 ===
@@ -92,7 +96,7 @@ It looks the same as what it was a few years ago, still hard to find under the n
 
 You walk slowly down the street and up the hill, to the door of the old house.
 
-The door is once again before, battered and chipped.
+The door is once again before you, battered and chipped.
 
 Yet the hourglass knocker shines, polished and tempting.
 
@@ -100,10 +104,13 @@ Yet the hourglass knocker shines, polished and tempting.
 ->Knock on the door.
     <<jump Scene2_3>>
 ===
-//I left off on my edits here
+
 title: Scene2_3
 ---
-No one answers, as you think. Then you open the door and enter the old house.
+No one answers, as you expected. 
+
+//this could be a click
+You take hold of the doorknob, open the door, and enter the old house.
 
 The house is still the same as it was a few years ago, warm and humid. 
 
@@ -115,59 +122,42 @@ You grope your way through the entryway, skirting the accumulation of dust and t
 
 title: House2_1
 ---
+You look around and find the side table from your last visit. The plastic bowl is still there, empty.
 
-You look around and find the side table from back then. The plastic bowl is still there, but there is no candy this time.
+You look up and realize that the mirror above the side table is broken, its shards dull and lifeless.
 
-“Didn’t anyone come here after that?” You ask.
+Despair takes you, until you catch sight of a shaft of moonlight shining through a doorway to your left.
 
-No one answers you, of course.
-
-Then you look up and realize that the magical mirror above the side table is gone.
-
-Where did the mirror go? Confused, you look around again.
-
-Moonlight shines through a room connected to the entryway.
-
-You faintly hear something.
-
-It’s like someone is talking, but they can’t make out what they are saying.
+You faintly hear someone talking, but can’t make out what they are saying.
 
 “Anyone here?” You ask.
 
-The sound seems to be echoing in your ears, and it seems to appear directly in your mind.
+The sound echoes in your ears, as if it were appearing directly in your mind.
 
-You decide to trust your ears, and walk toward the room where the sound appears to be coming from.
+You decide to trust your ears, and walk towards the illuminated room.
 
 //screen change here
-You come to the front room.
+You enter the front room.
 
 Fortunately, there are no broken floors, trash, or fallen wood chips here. But it still looks dated.
 
-A large carpet is placed in the middle of the room. 
+There's a large carpet in the middle of the room, surrounded by sofas, all dated and out-of-fashion. 
 
-There are double sofa, single sofa, seats and coffee table surrounds it.
+Behind the sofa is a wide dusty window. 
 
-Standing lamps stand on both sides of the double sofa. 
+Through it, you can see the street outside. Kids in costumes run up and down, paying the darkened old house no mind.
 
-Behind the sofa is the window you chose earlier when you were trying to take a look inside. 
+You turn back to the room and notice a fireplace across from you.
 
-Although blurry, you can see the street outside through the glass and dust.
+A mirror hangs above it.
 
-All the furniture designs look dated, and they are all dusty.
+You approach excitedly. As you guessed - it’s the mirror.
 
-You look closer at the room and find a fireplace near the armchair.
+There is not much dust on the mirror, and it looks cleaner than the other furniture, almost newly bought. But you would never mistake the mirror.
 
-A mirror hangs over the fireplace.
+“What are you going to show me this time?”
 
-“!”
-
-You approach the fireplace excitedly. As you guess - it’s the mirror.
-
-There is not much dust on the mirror, and it looks much cleaner than other furniture here, looks like a newly bought one. But you trust yourself not to mistake the mirror.
-
-“What are you going to show me this time? Who is it related to?”
-
-You can’t stop guessing that in your mind, remembering those people close to you.
+You think of those close to you, wondering if the mirror knows them too.
 
 //screen change to vision here
 ->Think about your friends.
@@ -180,63 +170,61 @@ You can’t stop guessing that in your mind, remembering those people close to y
 
 title: Vision2_1
 ---
+<<set $visionSubject to "friends">>
+
 You see the reflection of yourself and your friends - Jules, Ash, and River. 
 
-You are standing on the side of the street in the reflection, but {$moves} is not standing with you.
+You are standing on the side of the street, but {$moves} is not standing with you.
 
-They are standing next to a car, and many adults are helping to carry various large boxes.
- 
-“What happened?” You are nervous.
+They are standing next to a car, which adults are filling with large boxes.
 
-Where is {$moves} going? Are they moving? Why are they moving, is it because they don’t like living on this street?
+Where is {$moves} going? Are they moving away? Why?
 
 Your thoughts are a mess.
 
-You are close friends, and you had hoped that you could always be close friends forever -
+You always thought you, Jules, Ash, and River would be close friends forever.
 
-But you never wished that you separate so early. You don’t even know how to contact each other after separation, and whether you can meet each other again.
+You never wished to separate from any of them. You don’t even know how to contact {$moves} after separation.
+
+You don't know whether you will meet again.
 
 <<jump Vision2_4>>
 ===
 
 title: Vision2_2
 ---
+<<set $visionSubject to "family">>
+
 You see the reflection of yourself and your mom.
 
-You find yourself doing homework in your bedroom, and you don’t seem happy.
+You're doing homework, and your mom is preparing dinner for both of you with a tired face.
 
-Then the scene switches to the front room, where you see your mom rushing back from getting off work and preparing dinner for both of you with a tired face.
+Where's Dad?
 
-“Where’s dad?” You wonder.
+In your memory, whenever Mom is tired, Dad will always help her, especially when she's just got home from work.
 
-Your parents are very loving, and your dad never let his wife worry about housework with fatigue.
-
-In your impression, whenever mom is tired, dad will always let her take a good break first and then deal with all kinds of things to do by himself.
-
-But you can’t find your dad in the reflection. Has he come back yet? Or has he gone so far that he cannot come back temporarily?
+But you can’t find your dad anywhere in the reflection. Is he still at work? Or has he gone away?
 
 Thinking becomes messy, and bad thoughts pop up one after another.
 
-You dare not continue to think.
+You dare not continue to contemplate.
 
 <<jump Vision2_4>>
 ===
 
 title: Vision2_3
 ---
+<<set $visionSubject to "yourself">>
+
 You see the reflection of yourself.
 
-It looks like you are in a new school, perhaps middle school.
+You're at a new school...could it be the high school?
 
-At lunchtime, other students gather with their friends to have lunch together. But you walk out of the classroom alone, take your lunch and find a quiet place where no one is around. Then start to enjoy it.
+Other students gather with their friends to have lunch together. But you walk out of the classroom alone, take your lunch and find a quiet place to eat where no one is around.
 
-You feel sad about that.
+“Where are my friends? Jules, Ash, and River?” you ask the mirror, but the mirror will not answer you.
 
-“Where are my friends? Jules, Ash, and River?”
-
-You ask the mirror, but the mirror will not answer you.
-
-You start to think about where you are in the reflection and your age. Is it because you attend middle school and fail to make new friends? Or will you move in the future and live in a new place, so you can’t integrate into the new group? If you moved, how could you keep in touch with your current friends?
+Will your friends get tired of you? Will they be in different classes? Will you be all alone this year and the next?
 
 There’s only silence in the room. All you can do is think.
 
@@ -246,30 +234,29 @@ There’s only silence in the room. All you can do is think.
 title: Vision2_4
 ---
 //screen change here
-When you return to your senses, the mirror surface becomes blurred, and you can’t see anything.
+When you return to your senses, the mirror surface is blurred, and you can’t see anything.
 
 The sound you heard before is gone. 
 
-It seems that this place has really become an old house that has been abandoned for many years.
+It's quiet and dark here -- nothing unusual for an old house that has been abandoned for many years.
 
 <<jump House2_2>>
 ===
 
 title: House2_2
 ---
-You should be leaving, you realize immediately. Although what you have just seen makes it difficult for you to calm down.
-
-So you whisper to yourself, “You have to go, Delphine,” as if ordering yourself.
+You should be leaving, although what you have just seen makes it difficult for you to do so calmly.
 
 You have to meet up with your friends, and can’t let them see what you are thinking.
 
-And you need to get some candy, or your parents will be worried when you get home.
+And you need to get some candy. Your parents will be worried if you come home empty-handed.
 
-You leave this old house and close the door carefully when you leave.
+You leave the house and close the door carefully behind you.
+
+//screen change here??
+At the bottom of the hill, you look back at the shadowy shell of the house.
 
 “I will come again.”
-
-You seem to be telling yourself, but also like saying to this house.
 
 <<jump Scene2_End>>
 ===

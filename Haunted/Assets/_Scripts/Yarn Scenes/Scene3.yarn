@@ -2,17 +2,14 @@
 tags:
 ---
 //screen change here
+Halloween night.
+
 Leaves crunch beneath your feet as you make your way down the street. 
 You look over at {$bff}, swinging your pillowcase of candy as you walk. 
 This is the first Halloween where you're with {$bff} alone.
 The two of you have gotten closer in the past few years. You're best friends.
 You wish you were something more.
 
-->Next.
-	<<jump Scene3_3b>>
-===
-title: Scene3_3b
----
 You look up at {$bff}, pleading your case. “I'm telling you, this house is legit haunted. You'll see.”
 
 They look back at you, disbelief clear on their face. 
@@ -21,14 +18,15 @@ They look back at you, disbelief clear on their face.
 
 ->“It's real, I promise!”
     <<jump Scene3_3c>>
-->“You're just jealous that the ghosts chose me and not you.
+->“You're just jealous that the ghosts chose me and not you."
     <<jump Scene3_3c>>
 ===
 title: Scene3_3c
 ---
 “I guess we'll see about that!”
 You round the corner to the house, taking it all in. It stares back at you, empty, menacing.
-You adjust your werewolf-paw gloves - a much-appreciated upgrade of recent years. Your anticipation builds.
+You adjust your werewolf-paw gloves - a much-appreciated upgrade of recent years. 
+Your anticipation builds.
 
 <<if $bff is "Ash">>
     Ash goes to touch their chin contemplatively, but remembers their ironic vampire makeup at the last second, fidgeting awkwardly.
@@ -64,7 +62,7 @@ You are deeply affronted at the disrespect. “Respect the space, man!”
 
 {$bff} looks at you incredulously. “C'mon, Del. It's just a house. It can't hear me.”
 
-They walk into the living room, running a finger along the dusty old couch.
+They push past you into the house, through the front room, and on to the living room, running a finger along the dusty old couch.
 Above the fireplace, only the frame of the mirror from your last visit remains. Shards of glass litter the floor.
 
 {$bff} looks up at you with anticipation. “Why don't we do a little exploring?”
@@ -91,9 +89,10 @@ They're joking, but it stings more than it should. You hope they still think you
 You creep steadily through the downstairs, keeping an eye out for the supernatural.
 
 The dim hallway lined with old portraits. The study with the taxidermied deer head. The conservatory, chock full of dead and decaying plants. 
+
 None of these places catch your eye.
 
-“Where is it,” you whisper to yourself. “It's gotta be down here somewhere.”
+“Where is it?” you whisper to yourself. “It's gotta be down here somewhere.”
 
 The visions of your future, while disturbing, have grown into a reliable force in your life.
 They leave you with more questions than answers. 
@@ -110,11 +109,13 @@ title: Scene3_KITCHEN
 //screen change here
 This whole house is preserved, manicured, immaculate except for the layers of dust. This kitchen almost feels like stepping into a different universe.
 
-Pots clutter the stove. You can almost imagine them rattling and boiling making food for the residents of this old house.
+Pots clutter the stove. You can almost imagine them rattling and boiling, making food for the residents of this old house.
 
-Pots of herbs line the windowsill. Most of them are dead, but the mint is stubbornly climbing the window panes, even after all this time. Resilient little guy.
+Pots of herbs line the windowsill. Most of them are dead, but the mint is stubbornly climbing the window panes, even after all this time. 
+Resilient little guy.
 
-One side of the sink is piled high with dishes. The other side is full of soapy, opaque water. No one lives here; no one has washed these dishes in years. So why is the water in the sink steaming?
+One side of the sink is piled high with dishes. The other side is full of soapy, opaque water. No one lives here, no one has washed these dishes in years. 
+So why is the water in the sink steaming?
 
 ->Inspect the sink.
 	<<jump Scene3_KITCHEN2>>
@@ -157,10 +158,12 @@ title: Scene3_UPSTAIRS_2
 //screen change here
 You creep steadily through the upstairs, keeping an eye out for the supernatural.
 
-The dim hallway lined with old portraits. The study with the taxidermied deer head. The conservatory, chock full of dead and decaying plants. None of these places catch your eye.
+The dim hallway lined with old portraits. The study with the taxidermied deer head. The conservatory, chock full of dead and decaying plants. 
+None of these places catch your eye.
 
-Your unease grows with every step. “This is so lame,” you think to yourself. “They're gonna think I made it all up.”
-“I'm sure we'll see something soon. Something is always here,” you hear yourself say, but your voice sounds far away to your own ears. Where is it? Where is your vision?
+Your unease grows with every step. //“This is so lame,” you think to yourself. “They're gonna think I made it all up.”
+“I'm sure we'll see something soon. Something is always here,” you hear yourself say, but your voice sounds far away to your own ears. 
+Where is it? Where is your vision?
 
 These visions of your future, while disturbing, have grown into a reliable force in your life.
 They leave you with more questions than answers. 
@@ -188,12 +191,15 @@ They look back at you, and their face hardens with resolve. “Ok, so. Ghosts. W
 title: Scene3_BEDROOM_2
 ---
 You round the corner of the bed. {$bff} follows close behind you.
-Together, you inspect the bedroom. The tight military corners of the bedspread. The jewelry lovingly placed on the bedside table. The yellowing family photographs on the walls - some of them look suspiciously like you.
+Together, you inspect the bedroom. 
+The tight military corners of the bedspread. 
+The jewelry lovingly placed on the bedside table. 
+The yellowing family photographs on the walls - some of them look suspiciously like you.
 
-As you round the corner of the bed, both of you glance up and find, inexplicably, the mirror from the downstairs mantle, completely intact, hanging from the wall. You shiver with the sudden cold.
+As you round the corner of the bed, both of you glance up and find, inexplicably, the mirror from the downstairs mantle, completely intact, hanging from the wall. You shiver with sudden cold.
 
 The mirror ripples and shifts, your reflections fading away.
-{$bff} gasps, tightly clutching your hand. You barely have the presence of mind to be thrilled at this development.
+{$bff} gasps, tightly clutching your hand. You barely have the presence of mind to be thrilled.
 
 ->The vision is upon you both.
     <<jump Scene3_FUTUREVISION_1>>
@@ -257,9 +263,19 @@ You and {$bff} sit on the steps, still holding hands. For a long moment, everyth
 
 “Do you think it's going to come true? The vision, I mean.”
 
-You look back at {$bff}, thinking about the other visions you've had in the house. “They always come true. Not always in the way we expect, but they always come true.”
+You look back at {$bff}, thinking about the other visions you've had in the house. 
 
-“Then why do you even try? If things are going to go this badly, why would you start something like this?”
+<<if $visionSubject is "friends">>
+    "I saw how {$moves} was going to move away, three years before they even left!"
+<<elseif $visionSubject is "family">>
+    "I saw how my mom and dad were going to break up, three years before it even happened!"
+<<else>>
+    "I saw how bad freshman year was going to be, years before it even happened!"
+<<endif>>
+
+“The visions always come true. Not always in the way we expect, but they always come true.”
+
+“Then why do you even try? If things are going to go this badly, why would we even start?”
 
 ->“Because sometimes the stuff before it is really good.”
     <<jump Scene3_PORCHGOOD>>

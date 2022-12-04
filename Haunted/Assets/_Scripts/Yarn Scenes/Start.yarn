@@ -8,12 +8,14 @@ tags:
 <<declare $pal to "Jules">>
 
 //variables established in Scene 2
+<<declare $visionSubject to "friends">>
 
 //variables established in Scene 3
 <<declare $groundFloorExplored to true>>
 <<declare $porchTogether to true>>
 
 //variables established in Scene 4
+<<declare $majorAnxiety to "relationship">>
 <<declare $parenthoodRejection to false>>
 <<declare $agingAnxiety to false>>
 <<declare $relationshipConfidence to true>>

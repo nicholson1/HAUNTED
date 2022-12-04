@@ -1,7 +1,8 @@
 ﻿title: Scene5
 tags:
 ---
-Back in your hometown for Halloween. Not much has changed around here.
+//screen change here
+Halloween night, back in your hometown. Not much has changed around here.
 
 But of course you've changed.
 
@@ -25,7 +26,7 @@ Like a mirror, seen slightly askew.
 <<if $parenthoodRejection is true>>
     You never pictured yourself as a parent, but a couple injudicious decisions later and here you are. 
     
-    Not that sweet little Daniel is a mistake. But he was…unintentional.
+    Not that dear little Daniel was a mistake. But he was…unintentional.
 <<endif>>
 
 <<jump Meetup5_1>>
@@ -43,7 +44,7 @@ But somehow she's always ended up visiting you.
 Walking with her down these familiar streets, you feel like hardly an echo of who you used to be.
 
 <<if $parenthoodRejection is false>>
-    You used to picture yourself as a parent sometimes. 
+    You used to picture yourself as a parent sometimes (once you'd got your life together). 
     
     You know Mom would love a grandkid. 
     
@@ -150,9 +151,9 @@ title: Meetup5_6
 
 "I haven't been back here in years," you say, as if {$pal} wasn't well-aware.
 
-"You're not the only one," they say. "I saw {$bff} earlier today."
+"You're not the only one," they reply. "I saw {$bff} earlier today."
 
-A chill runs through you. "{$bff}?"
+A chill runs through you. "{$bff} is in town?"
 
 "Yeah. How have things been with you two since…" {$pal} doesn't need to finish the sentence.
 
@@ -282,7 +283,7 @@ You clear your throat, already feeling a tightness there.
 
 "Sometimes it feels like nothing has gone right since the last time we were here. Or since I left for school. Or since we stopped talking."
 
-$bff's eyes are bright and attentive. There's something so familiar in their look, and the feeling unsettles you -- deja vu about something that hasn't happened yet.
+{$bff}'s eyes are bright and attentive. There's something so familiar in their look, and the feeling unsettles you -- deja vu about something that hasn't happened yet.
 
 "I'm not the same person I was then, I don't think. The person I was with you. And I…miss her."
 
@@ -308,7 +309,7 @@ title: House5_8
 
 It's their voice, and not muted and warped like a vision, but right behind you.
 
-You turn, nauseated, and see $bff standing behind you, stricken.
+You turn, nauseated, and see {$bff} standing behind you, stricken.
 
 You recognize their expression. You have seen this once before.
 
@@ -593,8 +594,6 @@ Only forward.
 <<endif>>
 ===
 
-//should I add another epilogue for if Mom is your $vip???
-
 title: Epilogue_A
 ---
 It's Halloween night. You hover at the edge of the demolition site, peering at the house's absence.
@@ -625,6 +624,8 @@ You get tired so easily now, you'll be in bed long before the kids finish their 
 
 <<if $agingAnxiety is true>>
     You used to fear getting this old, but it's not all bad.
+<<else>>
+    Getting old has its downsides, but here in the last act of your life there's very little to complain about.
 <<endif>>
 
 You and {$bff} peer through the safety fence, into the demolition site.
@@ -638,18 +639,41 @@ title: Epilogue_Bb
 ---
 <<if $bff is "Ash">>
     "It's still scary as hell, even like this. But the awful enthralls, a little," says Ash.
+    <<if $vip is "mom">>
+        "I can't believe my mom ever went in there," you say. "Not even to find me."
+        "Well, believe me, I could hear her complaining all the way across the house. It wasn't hard to find you once she got there," Ash replies with a laugh.
+    <<else>>
+        "Then again, age we are now, I don't know that I need a vision to tell me what's next." They give you a morbid grin.
+    <<endif>>
 <<elseif $bff is "River">>
     "I've been studying satellite maps, and I'm fairly certain this site is on a ley line, which would explain a lot," says River.
+    <<if $vip is "mom">>
+        "I can't believe my mom ever went in there," you say. "Not even to find me."
+        "I've often wondered if she had a minor magical spark," says River. "Something to ward her in that awful place."
+    <<else>>
+        "It may even be a minor Hellmouth." They laugh at your glare. "Okay, fine, that one's just kidding."
+    <<endif>>
 <<else>>
     "How much longer do we have to stay? It still creeps me out," says Jules.
+    <<if $vip is "mom">>
+        "I can't believe my mom ever went in there," you say. "Not even to find me."
+        "She was braver than I was," admits Jules. "I found the door to the basement, but I couldn't tell if you were down there. And I didn't want to go in alone."
+    <<else>>
+        "We're better off without it, and that's that." Jules wipes their hands on their sweater, as if brushing off the house's residue.
+    <<endif>>
 <<endif>>
 
 "I miss it," you admit, and your friend nods.
 
 "There was something there," they say. "Not something good, but something there."
 
-//might make this line reactive to relationship anxiety in scene 4
 You look away from the house to smile at your friend. "Well, there's something here too."
+
+<<if $relationshipConfidence is true>>
+    It's not what you once fantasized about, but it might even be better.
+<<else>>
+    Part of you still longs for more, but what you have now hasn't been poisoned by visions and promises, and that's something.
+<<endif>>
 
 You offer them an arm and they take it. "Ready to go?"
 
@@ -671,6 +695,8 @@ You get tired so easily now, you'll be in bed long before the kids finish their 
 
 <<if $agingAnxiety is true>>
     You used to fear getting this old, but it's not all bad.
+<<else>>
+    Getting old has its downsides, but here in the last act of your life there's very little to complain about.
 <<endif>>
 
 You and Daniel peer through the safety fence, into the demolition site.
@@ -682,9 +708,15 @@ With its body stripped away, the house's foundation is bare and white, open to t
 
 title: Epilogue_Cb
 ---
-"Your grandpa would love this," you tell Daniel. "He thought this place was a deathtrap waiting to happen."
+<<if $vip is "mom">>
+    "It really does look like a deathtrap from out here," you tell Daniel. "I can't believe your grandma ever went inside, not even to find me."
 
-"Yeah, yeah, the tetanus, I remember." Daniel rolls his eyes, but he smiles too. "You almost ready to go?"
+    "I wish I remembered it!" Daniel laughs. "I can imagine her complaining -- 'Look at all this dust! You're going to catch a chill!'"
+<<else>>
+    "Your grandpa would love this," you tell Daniel. "He thought this place was a deathtrap waiting to happen."
+    
+    "Yeah, yeah, the tetanus, I remember." Daniel rolls his eyes, but he smiles too. "You almost ready to go?"
+<<endif>>
 
 "I miss it, a little," you admit. "The sureness."
 
@@ -694,7 +726,13 @@ title: Epilogue_Cb
 
 "I put your werewolf ears by the door, so you'll be ready when the bell rings."
 
-//maybe put in a line that's reactive to relationship anxiety from scene 4
+<<if $relationshipConfidence is true>>
+    When you saw yourself old and alone, you wondered who might be waiting just out of frame.
+    You needn't have worried.
+<<else>>
+    Some days you feel strange, living with your son who now cares for you like a parent.
+    But most days you just feel glad.
+<<endif>>
 
 Steady on Daniel's arm, you and he depart, leaving the house and its absence behind.
 
