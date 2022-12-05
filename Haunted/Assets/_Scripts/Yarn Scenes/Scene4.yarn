@@ -339,7 +339,7 @@ title: Scene4_Walk_6d
 ---
 <<set $relationshipConfidence to false>>
 
-It's hard to imagine dating anyone besides {$bff}. Stupid as that feels, they were you first, and as of now, only love. 
+It's hard to imagine dating anyone besides {$bff}. Stupid as that feels, they were your first, and as of now, only love. 
 
 Maybe it was silly to think your high school sweetheart would be your soulmate too.
 
@@ -414,7 +414,7 @@ title: Scene4_House_3
 //screen change here
 You don't realize you're holding your breath until you climb the last stair and exhale. Like the house you came from, there are boxes strewn about the attic. 
 
-Your initial browsing reviews nothing but boxes littered across the floor, alongside a generous helping of dust bunnies. 
+Your initial browsing produces nothing but boxes littered across the floor, alongside a generous helping of dust bunnies. 
 
 Sitting atop one of the boxes, however, is a distinctly un-boxlike shape.
 
@@ -562,7 +562,7 @@ Maybe there's a pithy word for what you're feeling in another language, but all 
 
 You pull yourself back, and instead of taking in an entire community, you focus solely on your own faintly mirrored reflection.
 
-Your reflection in the window starts to ripple. It shows a picture much clearer than any window should be able to reflect back.
+Your reflection in the window starts to ripple. It shows a picture much clearer than any ordinary window would.
 
 The image blurs and distorts, arranging itself into a crystal clear view of an old lady on a rocking chair. 
 
@@ -628,12 +628,12 @@ Probably. After all, you're staring intently at your own barely-there reflection
 The image of you in your twilight years is burned into your brain.
 But only your present self is visible now. 
 
-This is the most alone you've ever felt while in this house.
+This is the most alone you've felt in this house.
 
 <<if $plushieRecognition is false>>
     In this lonely, cramped attic, there's only you and the dolphin plushie and the emptiness.
 <<elseif $plushieRecognition is true>>
-    In this lonely, cramped attic, there's only you and a dolphin plushie that shares a piece of your soul, and as well as your name.
+    In this lonely, cramped attic, there's only you and a dolphin plushie that shares a piece of your soul, as well as your name.
 <<endif>>
 
 <<jump Scene4_End>>

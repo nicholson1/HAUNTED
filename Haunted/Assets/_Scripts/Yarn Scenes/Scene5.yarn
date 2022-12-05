@@ -390,11 +390,16 @@ You gaze into its depths, and wish to see…
 <<if $hasKid is true>>
     ->your child, Daniel.
         <<jump Basement5_4a>>
+    ->your mother, Janet.
+        <<jump Basement5_4b>>
+    ->your...something, {$bff}.
+        <<jump Basement5_4c>>
+<<else>>
+    ->your mother, Janet.
+        <<jump Basement5_4b>>
+    ->your...something, {$bff}.
+        <<jump Basement5_4c>>
 <<endif>>
-->your mother, Janet.
-    <<jump Basement5_4b>>
-->your...something, {$bff}.
-    <<jump Basement5_4c>>
 ===
 
 title: Basement5_4a
@@ -535,7 +540,7 @@ A voice from upstairs cuts through the quiet and the dark like a silver knife.
     "Delphine?"
 <<endif>>
 
-->Let the knife find you. Call out to them.
+->Let the knife find you. Call out.
     <<jump Final5_3>>
 ->Let the shadows swallow you. Stay quiet.
     <<jump Final5_2>>

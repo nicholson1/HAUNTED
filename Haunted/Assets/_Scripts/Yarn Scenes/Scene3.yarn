@@ -99,7 +99,9 @@ They leave you with more questions than answers.
 No matter what they're about, they fill you with terror and uncertainty. 
 But beneath all that fear, a part of you has come to crave the mystery it provides.
 
-You reach the end of the hall, pushing open the final door. As you step into the kitchen, a chill goes down your spine. This is the place. Your vision is in here.
+You reach the end of the hall, pushing open the final door. As you step into the kitchen, a chill goes down your spine. 
+This is the place. 
+Your vision is in here.
 
 ->Explore the kitchen.
     <<jump Scene3_KITCHEN>>
@@ -170,7 +172,9 @@ They leave you with more questions than answers.
 No matter what they're about, they fill you with terror and uncertainty. 
 But beneath all that fear, a part of you has come to crave the mystery it provides.
 
-You reach the end of the hall, pushing open the final door. As you step into the bedroom, a chill goes down your spine. This is the place. Your vision is in here.
+You reach the end of the hall, pushing open the final door. As you step into the bedroom, a chill goes down your spine. 
+This is the place. 
+Your vision is in here.
 
 ->Explore the bedroom.
     <<jump Scene3_BEDROOM_1>>
