@@ -1,7 +1,9 @@
 ﻿title: Scene5
 tags:
 ---
-//screen change here
+<<NextPlayer ImageController "del40">>
+<<NextBackground ImageController "none">>
+<<NextNPC ImageController "none">>
 Halloween night, back in your hometown. Not much has changed around here.
 
 But of course you've changed.
@@ -15,11 +17,13 @@ But of course you've changed.
 title: Scene5_1a
 ---
 <<set $hasKid to true>>
+<<NextNPC ImageController "kid1">>
 And of course, Mom's over the moon about getting to spend Halloween with her first and only grandchild.
 
 She didn't quite *get* his cowboy-astronaut-fairy costume at first, but an hour of lore and crayon diagrams later she's become quite the expert on this character, and certainly their biggest fan.
 
 It's strange to see Daniel and your mom walking hand-in-hand down these same streets.
+<<NextBackground ImageController "neighborhood">>
 
 Like a mirror, seen slightly askew. 
 
@@ -38,10 +42,12 @@ title: Scene5_1b
 Not intentionally. Never intentionally.
 
 You've always meant to come back, to visit Mom.
+<<NextNPC ImageController "mom2">>
 
 But somehow she's always ended up visiting you.
 
 Walking with her down these familiar streets, you feel like hardly an echo of who you used to be.
+<<NextBackground ImageController "neighborhood">>
 
 <<if $parenthoodRejection is false>>
     You used to picture yourself as a parent sometimes (once you'd got your life together). 
@@ -77,6 +83,13 @@ title: Meetup5_2
 {$pal} grabs you in a big hug, squeezing you until you feel a bit lightheaded. When did they start working out…?
 
 The pterodactyl offers you a tiny green hand and, with a slight whistle due to an absent front tooth, introduces themself as Merritt.
+<<if $pal is "Ash">>
+    <<NextNPC ImageController "kida">>
+<<elseif $pal is "River">>
+    <<NextNPC ImageController "kidr">>
+<<else>>
+    <<NextNPC ImageController "kidj">>
+<<endif>>
 
 "My kid," adds {$pal}, laughing at Merritt's frown. "Sorry, sorry -- the pterodactyl I rescued from Jurassic Park."
 
@@ -102,6 +115,13 @@ You point to the astronaut-fairy-cowboy beside you.
 Your mom, overcome by the proximity of not one but two adorable children, happily takes point in escorting Merritt and Daniel to the first trick-or-treating house.
 
 Trailing leisurely behind, you and {$pal} have a few minutes to catch up.
+<<if $pal is "Ash">>
+    <<NextNPC ImageController "ash40">>
+<<elseif $pal is "River">>
+    <<NextNPC ImageController "riv40">>
+<<else>>
+    <<NextNPC ImageController "jul40">>
+<<endif>>
 
 ->"How've you been, {$pal}?"
     <<jump Meetup5_5>>
@@ -116,6 +136,13 @@ Your mom's delighted interest in Merritt's reptilian ensemble sparks a lengthy d
 The two set out for the first trick-or-treating house without so much as a glance back at you or {$pal}.
 
 Trailing leisurely behind, you and {$pal} have a few minutes to catch up.
+<<if $pal is "Ash">>
+    <<NextNPC ImageController "ash40">>
+<<elseif $pal is "River">>
+    <<NextNPC ImageController "riv40">>
+<<else>>
+    <<NextNPC ImageController "jul40">>
+<<endif>>
 
 ->"How've you been, {$pal}?"
     <<jump Meetup5_5>>
@@ -181,6 +208,7 @@ title: Meetup5_8
 You stop short.
 
 There before you is the house.
+<<NextBackground ImageController "housefar">>
 
 <<jump House5_1>>
 ===
@@ -213,6 +241,8 @@ title: House5_2
     {$pal} looks at you skeptically, but then they go, following your mom and Merritt up the sidewalk, and towards the lighted houses.
 <<endif>>
 
+<<NextNPC ImageController "none">>
+
 ->Head up to the porch.
     <<jump House5_3>>
 ===
@@ -220,6 +250,7 @@ title: House5_2
 title: House5_3
 ---
 You climb the front steps, back onto the rolling, uneven porch.
+<<NextBackground ImageController "porch">>
 
 There's a hole in the floor that's new to you.
 
@@ -233,6 +264,7 @@ Strangely, that's a comfort.
 
 title: House5_4
 ---
+<<NextBackground ImageController "mirror">>
 Though the walls are thinning and the roof is caving in, the air inside the house is warm and thick as ever.
 
 In the dim light, you see the dusty candy bowl sitting atop the side table. 
@@ -297,15 +329,23 @@ You long so much to hear what they would say, what they will say when this momen
     <<jump House5_8>>
 ->"And I forgot her. I forgot you too."
     <<jump House5_8>>
-->"And you helped create her. I need you to help me find her again."
-    <<jump House5_8>>
-->"And she was happy with you. I want to be happy again."
-    <<jump House5_8>>
+//->"And you helped create her. I need you to help me find her again."
+    //<<jump House5_8>>
+//->"And she was happy with you. I want to be happy again."
+    //<<jump House5_8>>
 ===
 
 title: House5_8
 ---
 "Delphine?"
+
+<<if $bff is "Ash">>
+    <<NextNPC ImageController "ash40">>
+<<elseif $bff is "River">>
+    <<NextNPC ImageController "riv40">>
+<<else>>
+    <<NextNPC ImageController "jul40">>
+<<endif>>
 
 It's their voice, and not muted and warped like a vision, but right behind you.
 
@@ -335,6 +375,8 @@ Just for a little while, and then maybe you could face them.
 
 title: House5_10
 ---
+<<NextNPC ImageController "none">>
+
 Not upstairs, trapped between the stifled bedrooms and the chilly attic.
 
 Not the living room, with no way out but back to the front door.
@@ -350,6 +392,7 @@ But the very last place left -- the basement.
 title: Basement5_1
 ---
 You slip down the stairs, grateful not to hear footsteps following you.
+<<NextBackground ImageController "basement">>
 
 The basement is so dark, so awfully mind numbingly dark.
 
@@ -404,6 +447,7 @@ You gaze into its depths, and wish to see…
 
 title: Basement5_4a
 ---
+<<NextNPC ImageController "kid1">>
 Daniel is so young, and there's still so much more to come, maybe more than he can bear.
 
 What will become of him?
@@ -415,6 +459,7 @@ What will become of him?
 
 title: Basement5_4b
 ---
+<<NextNPC ImageController "mom2">>
 <<if $hasKid is false>>
     Your mom is so old now, and you're all she has left.
 <<else>>
@@ -428,6 +473,14 @@ title: Basement5_4b
 
 title: Basement5_4c
 ---
+<<if $bff is "Ash">>
+    <<NextNPC ImageController "ash40">>
+<<elseif $bff is "River">>
+    <<NextNPC ImageController "riv40">>
+<<else>>
+    <<NextNPC ImageController "jul40">>
+<<endif>>
+
 Each time you see {$bff}, you make it worse and worse, tying the knot tighter and tighter around your hurt. 
 
 After what you said just now, how will your next meeting go?
@@ -450,6 +503,7 @@ There's someone there.
 The face comes clear.
 
 It's just you.
+<<NextNPC ImageController "none">>
 
 Just your face as it is now, grown so tired and worn beyond belief.
 
@@ -601,6 +655,8 @@ Only forward.
 
 title: Epilogue_A
 ---
+<<NextBackground ImageController "none">>
+<<NextPlayer ImageController "del70">>
 It's Halloween night. You hover at the edge of the demolition site, peering at the house's absence.
 
 Alone, you feel its disappearance acutely, the wind October-chilly and dry.
@@ -623,6 +679,16 @@ You avoid the pools of light cast by the streetlamps as you go.
 
 title: Epilogue_Ba
 ---
+<<NextBackground ImageController "none">>
+
+<<NextPlayer ImageController "del70">>
+<<if $bff is "Ash">>
+    <<NextNPC ImageController "ash70">>
+<<elseif $bff is "River">>
+    <<NextNPC ImageController "riv70">>
+<<else>>
+    <<NextNPC ImageController "jul70">>
+<<endif>>
 It's Halloween night. Well, Halloween dusk. 
 
 You get tired so easily now, you'll be in bed long before the kids finish their trick-or-treating rounds.
@@ -694,6 +760,10 @@ There's still time for a scary movie before bed.
 
 title: Epilogue_Ca
 ---
+<<NextBackground ImageController "none">>
+
+<<NextPlayer ImageController "del70">>
+<<NextNPC ImageController "kid2">>
 It's Halloween night. Well, Halloween dusk. 
 
 You get tired so easily now, you'll be in bed long before the kids finish their trick-or-treating rounds.
@@ -750,4 +820,7 @@ If you're lucky, there'll be time for a scary movie before bed.
 title: FinalEnd
 ---
 End Screen of Haunted
+<<NextPlayer ImageController "none">>
+<<NextBackground ImageController "none">>
+<<NextNPC ImageController "none">>
 ===

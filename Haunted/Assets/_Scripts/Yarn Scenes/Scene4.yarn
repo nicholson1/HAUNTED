@@ -1,7 +1,9 @@
 ﻿title: Scene4
 tags:
 ---
-//screen change here
+<<NextPlayer ImageController "del24">>
+<<NextBackground ImageController "none">>
+<<NextNPC ImageController "none">>
 Halloween...afternoon, really.
 
 The home you grew up in is littered with moving boxes. It's been a while since you visited, and you realize you took the permanence of this place for granted. 
@@ -82,6 +84,7 @@ Suddenly, it dawns on you that you've been sitting on a toilet with its lid down
 ===
 title: Scene4_Move_3
 ---
+<<NextNPC ImageController "mom1">>
 You force yourself to leave the privacy of the restroom. Mom is slumped on the couch, taking a break between flurries of stuffing boxes into the U-Haul.
 
 “So, did you want to, uh…” You almost lose track of your train of thought. “Did you want to keep packing up?”
@@ -189,7 +192,8 @@ The possibility of a few minutes to yourself is both chilling and tempting.
 ===
 title: Scene4_Walk_1
 ---
-//screen change here
+<<NextNPC ImageController "none">>
+<<NextBackground ImageController "neighborhood">>
 You almost forgot it's Halloween. It's too early for trick-or-treaters. 
 You wonder where all your werewolf costumes ended up. 
 
@@ -377,7 +381,7 @@ Even if you wish a little to see them in whatever vision the house provides you.
 ===
 title: Scene4_House_1
 ---
-//screen change here
+<<NextBackground ImageController "housefar">>
 Here it is again… an eerily familiar sight. Part of you thought you'd never come back. 
 
 The other part of you knew you were always destined to return to this house.
@@ -397,6 +401,7 @@ Creeped out or not, you refuse to be stopped. You're not a child anymore, after 
 ===
 title: Scene4_House_2
 ---
+<<NextBackground ImageController "mirror">>
 In the spirit of not being a frightened kid anymore, you resolve to try something new. That's right - you're gonna go to the attic! 
 
 Every time you came here before, you were way too scared to go up there.
@@ -411,7 +416,7 @@ Nonetheless, you keep walking. Child you would be so proud… and terrified.
 ===
 title: Scene4_House_3
 ---
-//screen change here
+<<NextBackground ImageController "attic">>
 You don't realize you're holding your breath until you climb the last stair and exhale. Like the house you came from, there are boxes strewn about the attic. 
 
 Your initial browsing produces nothing but boxes littered across the floor, alongside a generous helping of dust bunnies. 
@@ -564,6 +569,8 @@ You pull yourself back, and instead of taking in an entire community, you focus 
 
 Your reflection in the window starts to ripple. It shows a picture much clearer than any ordinary window would.
 
+<<NextBackground ImageController "none">>
+
 The image blurs and distorts, arranging itself into a crystal clear view of an old lady on a rocking chair. 
 
 “I wanted to see MY future, not some random old lady. What is that, my grandma?” 
@@ -623,7 +630,7 @@ Does she know you wanted more? Is she mocking you for expecting anything else?
 Are you losing your mind? 
 
 Probably. After all, you're staring intently at your own barely-there reflection in the window. 
-//screen change here
+<<NextBackground ImageController "attic">>
 
 The image of you in your twilight years is burned into your brain.
 But only your present self is visible now. 

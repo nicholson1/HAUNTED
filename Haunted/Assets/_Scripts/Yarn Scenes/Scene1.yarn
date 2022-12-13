@@ -1,6 +1,9 @@
 title: Scene1
 tags:
 ---
+<<NextPlayer ImageController "del8">>
+<<NextBackground ImageController "none">>
+<<NextNPC ImageController "none">>
 Halloween night. This year finally trick-or-treating with no parents hanging on, holding you back.
 
 They finally caved, on the costume, on going out without them, on everything.
@@ -14,19 +17,19 @@ Before letting you out, Mom and Dad had just one condition,
 "Don't go near that nasty old place at the end of the street."
 
 ->"That nasty old place at the end of the street."
-    <<NextBackground ImageController "Kitchen">>
     <<jump Scene1_2>>
-    //screen change here ideally?
 ===
 
 title: Scene1_2
 ---
+<<NextBackground ImageController "housefar">>
 Up on the hill, looking down upon the neighborhood with its empty-eyed broken window stare. 
 
 The front yard is heaped with rotting old shingles, slipped loose from the roof like the baby teeth you started losing last year.
 
 A nasty old place.
 
+<<NextBackground ImageController "none">>
 "Why any of you kids would want to go up there is beyond me," says Mom. "But every year someone always does."
 
 "And then they get hurt," adds Dad. "Delphine, do you remember what I told you about tetanus?"
@@ -35,7 +38,6 @@ A nasty old place.
     <<jump Scene1_3>>
 ->"No. It was boring."
     <<jump Scene1_3>>
-    //screen change back to generic here
 ===
 
 title: Scene1_3
@@ -48,16 +50,20 @@ You light out for the meet-up spot, werewolf tail streaming behind you.
 
 Mom took you to three Halloween stores before you found the tail and ears that matched to your satisfaction.
 
-//ideally screen change to street here
+<<NextBackground ImageController "neighborhood">>
 Under the cool white moon of the streetlight, your three friends await --
 
+<<NextNPC ImageController "ash8">>
 Ash - managing to look bored even under the white sheet of a no-effort ghost costume.
 
+<<NextNPC ImageController "jul8">>
 Jules - cat ears, face paint, leotard, and tail all add up to the kind of adorable costume parents love for pictures.
 
+<<NextNPC ImageController "riv8">>
 River - dressed as…no, you really can't say what the costume is meant to be.
 
 The four of you, inseparable since kindergarten, best friends.
+<<NextNPC ImageController "none">>
 
 Though lately the thought has crossed your mind -- which of them is your best-best friend…?
 
@@ -73,6 +79,7 @@ title: Scene1_4_Ash
 ---
 And it's Ash who sees you first, poking one arm free to wave.
 
+<<NextNPC ImageController "jul8">>
 Jules hops up and down in delight. "Delphine's here!"
 
 <<jump Scene1_5>>
@@ -80,6 +87,7 @@ Jules hops up and down in delight. "Delphine's here!"
 
 title: Scene1_4_Jules
 ---
+<<NextNPC ImageController "jul8">>
 Jules sees you and bounds to the edge of the streetlight's pool of illumination. "Delphine! You're a werewolf!"
 
 <<jump Scene1_5>>
@@ -87,6 +95,7 @@ Jules sees you and bounds to the edge of the streetlight's pool of illumination.
 
 title: Scene1_4_River
 ---
+<<NextNPC ImageController "riv8">>
 River sees you, blinks at you twice, smiling a squinty nervous smile.
 
 Ash and Jules don't realize you've arrived until you join them under the streetlight.
@@ -96,10 +105,13 @@ Ash and Jules don't realize you've arrived until you join them under the streetl
 
 title: Scene1_5
 ---
+<<NextNPC ImageController "ash8">>
 "Okay, now we're all here, can we pleeeease get some candy?" says Ash. "It's literally Halloween and I haven't had a single candy yet!."
 
+<<NextNPC ImageController "jul8">>
 "Where should we start?" asks Jules. "I heard the Lawsons are giving out full-size candy bars!"
 
+<<NextNPC ImageController "riv8">>
 "Chocolate makes my stomach hurt," says River. "Can't we start at Mark's? His parents had Jolly Ranchers last year."
 
 ->Side with Jules.
@@ -112,6 +124,7 @@ title: Scene1_5
 
 title: Scene1_6_Ash
 ---
+<<NextNPC ImageController "ash8">>
 "I don't care where we start, as long as we frickin' start already! Let's go, or everybody else is gonna get the good candy." 
 
 You're amazed Ash's eyeroll is visible through the ghost costume's tiny eye slits.
@@ -124,6 +137,7 @@ You're amazed Ash's eyeroll is visible through the ghost costume's tiny eye slit
 
 title: Scene1_6_Jules
 ---
+<<NextNPC ImageController "jul8">>
 "I want the full-size candy bars!" you declare.
 
 Jules squeals happily, and the party sets off.
@@ -137,6 +151,7 @@ To the Lawsons!
 
 title: Scene1_6_River
 ---
+<<NextNPC ImageController "riv8">>
 "I want some Jolly Ranchers!" you declare.
 
 Candy bucket held high, River cheers your decision.
@@ -150,6 +165,7 @@ To Mark's house!
 
 title: Scene1_7
 ---
+<<NextNPC ImageController "none">>
 <<if $jollyRanchersChosen is true>>
     Mark's parents are dressed up as witches, and they offer heaping handfuls of Jolly Ranchers from within their arcane cauldron. 
 
@@ -168,7 +184,7 @@ Halloween is so much better post-parents.
 
 As the four of you wander down the street, it catches your eye.
 
-//ideally screen change here
+<<NextBackground ImageController "housefar">>
 Up on the hill, half-invisible against a black sky.
 
 The old house.
@@ -189,10 +205,13 @@ Ash slumps.
 
 River looks away.
 
+<<NextNPC ImageController "jul8">>
 "They said to stay out."
 
+<<NextNPC ImageController "ash8">>
 "It's too dangerous."
 
+<<NextNPC ImageController "riv8">>
 "And it's gross."
 
 ->Point to the haunted house. "We should go up there!"
@@ -201,18 +220,22 @@ River looks away.
 
 title: Scene1_8b
 ---
+<<NextNPC ImageController "ash8">>
 "River," and there's something ominous in Ash's tone. "What are you supposed to be?"
 
 There are not a lot of clues, it's true. 
 
 Tin foil, cardboard, glue, googly eyes, and construction paper have come together as something unclear in both form and meaning.
 
+<<NextNPC ImageController "riv8">>
 "Oh, I'm a ghost from outer space."
 
+<<NextNPC ImageController "jul8">>
 "You're the ghost…of an alien?" asks Jules.
 
 "Hmm, I never really thought about it like that."
 
+<<NextNPC ImageController "ash8">>
 "What did you think about it like then?" Ash says.
 
 ->Point to the haunted house. "We should go up there!"
@@ -221,6 +244,7 @@ Tin foil, cardboard, glue, googly eyes, and construction paper have come togethe
 
 title: Scene1_9
 ---
+<<NextNPC ImageController "none">>
 "We should go up there!" The more you say it, the more real it is.
 
 There's nothing stopping you. Not anymore.
@@ -232,11 +256,13 @@ Your friends look on, stricken.
 ->Appeal to Jules.
     <<jump Scene1_10_Jules>>
 ->Appeal to Ash.
+    <<NextNPC ImageController "ash8">>
     <<jump Scene1_10_Ash>>
 ===
 
 title: Scene1_10_Ash
 ---
+<<NextNPC ImageController "ash8">>
 "Ash, come on!" You pull on Ash's sheet until it threatens to slip loose. "It'll be super scary!"
 
 "No thanks." Ash yanks back possession of the sheet. "It'll be lame. It's just a trashed old house."
@@ -246,6 +272,7 @@ title: Scene1_10_Ash
 
 title: Scene1_10_River
 ---
+<<NextNPC ImageController "riv8">>
 "River, come on!" you say, tugging on one of River's rubbery green gloves. "It'll be so cool."
 
 <<if $jollyRanchersChosen is true>>
@@ -259,6 +286,7 @@ title: Scene1_10_River
 
 title: Scene1_10_Jules
 ---
+<<NextNPC ImageController "jul8">>
 "Jules, come on!" You gesture to Jules with one furry werewolf paw. "It'll be fun."
 
 <<if $jollyRanchersChosen is false>>
@@ -272,6 +300,7 @@ title: Scene1_10_Jules
 
 title: Scene1_11
 ---
+<<NextNPC ImageController "none">>
 Unbelievable. What a bunch of nerds.
 
 "Fine! I'll go by myself 'cause you're all a bunch of scaredy cats!"
@@ -281,11 +310,11 @@ You pull away from the group, storming up the front walk of the old house.
 As you go, you hear them call out. "Delphine! Delphine, wait!"
 
 <<jump House1_1>>
-//ideally screen change here
 ===
 
 title: House1_1
 ---
+<<NextBackground ImageController "porch">>
 Each step you take on the house's porch is like the next movement in a vast symphony of creaks and groans.
 
 There's something unstable in the warp of the floor beneath you, like walking across waves.
@@ -339,11 +368,11 @@ With a creak, it falls open, wide enough for you to enter.
 
 ->Go on.
     <<jump House1_4>>
-    //ideally screen change here
 ===
 
 title: House1_4
 ---
+<<NextBackground ImageController "mirror">>
 Inside the house is warmer than you expected, and more humid.
 
 The entryway is buried in drifts of trash, dust, and splintered wood.
@@ -360,6 +389,7 @@ There's something in the bowl.
 
 title: House1_5
 ---
+<<NextBackground ImageController "bowl">>
 In the bowl is one solitary piece of ancient, dusty candy.
 
 Red and yellow wrapper, faded and wrinkled with age.
@@ -404,6 +434,7 @@ And there's someone else there.
 
 title: House1_8_Ash
 ---
+<<NextNPC ImageController "ash40">>
 It could be Ash, face half-obscured in shadow.
 
 <<set $bff = "Ash">>
@@ -421,6 +452,7 @@ It could be Ash, face half-obscured in shadow.
 
 title: House1_8_River
 ---
+<<NextNPC ImageController "riv40">>
 It could be River, eyes round and fearful.
 
 <<set $bff = "River">>
@@ -438,6 +470,7 @@ It could be River, eyes round and fearful.
 
 title: House1_8_Jules
 ---
+<<NextNPC ImageController "jul40">>
 It could be Jules, looking nervously back at the open door.
 
 <<set $bff = "Jules">>
@@ -455,6 +488,7 @@ It could be Jules, looking nervously back at the open door.
 
 title: House1_9
 ---
+<<NextNPC ImageController "none">>
 There's no one there.
 
 But the house sighs around you, a creak and a rush of air, as if someone was there only a moment ago.
@@ -462,7 +496,7 @@ But the house sighs around you, a creak and a rush of air, as if someone was the
 You feel suddenly, terribly nauseous.
 
 You flee the house, tearing across the porch, down the steps, and back to the sidewalk.
-//screen change here
+<<NextBackground ImageController "housefar">>
 
 Your friends cluster around you, all asking about what happened.
 
@@ -484,12 +518,16 @@ title: After1_1a
     You point to River.
 <<endif>>
 
+<<NextNPC ImageController "ash8">>
 "We've been standing here the whole time," says Ash. "Nobody followed you."
 
+<<NextNPC ImageController "riv8">>
 River nods vigorously.
 
+<<NextNPC ImageController "jul8">>
 "Are you sure you feel okay?" asks Jules. "Maybe we should head home."
 
+<<NextNPC ImageController "ash8">>
 "Who cares if you saw somebody in there?" Ash whines. "We've only been to a few houses, and it's almost curfew! Come on!"
 
 ->"It really happened!"
@@ -506,25 +544,30 @@ title: After1_1b
 
 You show them your prize.
 
+<<NextNPC ImageController "riv8">>
 "Ooh, Bit-O-Honey!" says River, reaching out.
 
 You snatch your hand away. "Don't eat that! It's ancient."
 
 <<if $jollyRanchersChosen is true>>
+    <<NextNPC ImageController "jul8">>
     "Yeah, you can have my Jolly Ranchers if you want, just don't eat haunted candy!" Jules adds.
 <<else>>
+    <<NextNPC ImageController "jul8">>
     "Why don't we go to Mark's house next?" suggests Jules. "We'll get you some Jolly Ranchers."
 <<endif>>
 
+<<NextNPC ImageController "ash8">>
 "Let's get out of here." Ash starts walking, not waiting for the rest of you. "We've only been to a few houses, and it's almost curfew."
 
 ->Leave the house behind.
     <<jump After1_2>>
-    //screen change here
 ===
 
 title: After1_2
 ---
+<<NextBackground ImageController "none">>
+<<NextNPC ImageController "none">>
 It's easy enough to leave the house behind, to distract yourself with trick-or-treating.
 
 Your friends forget your bravery and your flight soon enough, and it's back to nothing but talk of candy and costumes.
@@ -539,12 +582,14 @@ But you know what you saw.
 
 That night you dream about the house.
 
+<<NextBackground ImageController "housefar">>
 You're there again, and you're not alone.
 
 Every time you look for the other person, they slip away.
 
 You wake up crying.
 
+<<NextBackground ImageController "none">>
 The next morning, Mom sees your sleepless eyes and delivers a blanket ban on too much sugar right before bed.
 
 All your Halloween spoils go up on top of the fridge to be doled out at parental discretion.

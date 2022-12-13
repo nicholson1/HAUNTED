@@ -1,7 +1,16 @@
 ﻿title: Scene3
 tags:
 ---
-//screen change here
+<<NextPlayer ImageController "del17">>
+<<NextBackground ImageController "neighborhood">>
+<<NextNPC ImageController "none">>
+<<if $bff is "Ash">>
+    <<NextNPC ImageController "ash17">>
+<<elseif $bff is "River">>
+    <<NextNPC ImageController "riv17">>
+<<else>>
+    <<NextNPC ImageController "jul17">>
+<<endif>>
 Halloween night.
 
 Leaves crunch beneath your feet as you make your way down the street. 
@@ -24,6 +33,7 @@ They look back at you, disbelief clear on their face.
 title: Scene3_3c
 ---
 “I guess we'll see about that!”
+<<NextBackground ImageController "housefar">>
 You round the corner to the house, taking it all in. It stares back at you, empty, menacing.
 You adjust your werewolf-paw gloves - a much-appreciated upgrade of recent years. 
 Your anticipation builds.
@@ -43,7 +53,7 @@ Your anticipation builds.
 ===
 title: Scene3_3d
 ---
-//screen change here
+<<NextBackground ImageController "porch">>
 You carefully creep up the creaky steps.
 As you cross the threshold, you feel the crunch of broken glass beneath your feet.
 
@@ -75,7 +85,6 @@ Above the fireplace, only the frame of the mirror from your last visit remains. 
 ===
 title: Scene3_GROUND1
 ---
-//screen change here
 <<set $groundFloorExplored to true>>
 Your parents' years-old warnings about tetanus ring in your mind.
 “I don't know,” you say uneasily, “I'm not sure if this place is safe.”
@@ -86,6 +95,7 @@ They're joking, but it stings more than it should. You hope they still think you
 {$bff} gets up and heads for the stairs. The old wooden steps creak ominously under their weight. 
 “I'll be upstairs. If I see any ghosts -” they roll their eyes “- I'll report back.”
 
+<<NextNPC ImageController "none">>
 You creep steadily through the downstairs, keeping an eye out for the supernatural.
 
 The dim hallway lined with old portraits. The study with the taxidermied deer head. The conservatory, chock full of dead and decaying plants. 
@@ -100,6 +110,7 @@ No matter what they're about, they fill you with terror and uncertainty.
 But beneath all that fear, a part of you has come to crave the mystery it provides.
 
 You reach the end of the hall, pushing open the final door. As you step into the kitchen, a chill goes down your spine. 
+<<NextBackground ImageController "kitchen">>
 This is the place. 
 Your vision is in here.
 
@@ -108,7 +119,6 @@ Your vision is in here.
 ===
 title: Scene3_KITCHEN
 ---
-//screen change here
 This whole house is preserved, manicured, immaculate except for the layers of dust. This kitchen almost feels like stepping into a different universe.
 
 Pots clutter the stove. You can almost imagine them rattling and boiling, making food for the residents of this old house.
@@ -181,7 +191,7 @@ Your vision is in here.
 ===
 title: Scene3_BEDROOM_1
 ---
-//screen change here
+<<NextBackground ImageController "bedroom">>
 
 The bedroom, like the rest of the house, is immaculately preserved.
 If it weren't for the dust, you'd think the owners had just left for vacation.
@@ -240,11 +250,20 @@ Back in the house, you sigh shakily.
 ===
 title: Scene3_GROUND_7
 ---
-//screen change here
+<<NextBackground ImageController "kitchen">>
 You are yanked back into reality. Your heart is pounding in your chest. You feel like you just ran a mile.
 You hear the thumping of footsteps above you. They move across the hall. Down the stairs. Out the front door.
 
 You run out to meet {$bff}. They're on the front porch, clearly just as disoriented as you.
+<<NextBackground ImageController "porch">>
+
+<<if $bff is "Ash">>
+    <<NextNPC ImageController "ash17">>
+<<elseif $bff is "River">>
+    <<NextNPC ImageController "riv17">>
+<<else>>
+    <<NextNPC ImageController "jul17">>
+<<endif>>
 
 “Delphine, what the hell was that? Why would you even bring me here?”
 
@@ -259,8 +278,10 @@ They shake their head furiously. “It's not even real. I'm being pranked or som
 ===
 title: Scene3_UPSTAIRS_6
 ---
-//screen change here
+<<NextBackground ImageController "bedroom">>
 The two of you stare at each other in shock. Your heart is racing. You feel like you just ran a mile.
+
+<<NextBackground ImageController "porch">>
 The two of you rush out of the house. The cool nighttime air is a relief as you step onto the porch.
 
 You and {$bff} sit on the steps, still holding hands. For a long moment, everything is silent. Then-

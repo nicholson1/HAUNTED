@@ -1,6 +1,9 @@
 ﻿title: Scene2
 tags:
 ---
+<<NextPlayer ImageController "del13">>
+<<NextBackground ImageController "kidbed">>
+<<NextNPC ImageController "none">>
 Halloween night. Well, Halloween afternoon.
 //Then years passed, and Halloween is coming again in a few days.
 
@@ -81,7 +84,7 @@ You cheer yourself up in a low voice, hugging the doll Del.
 
 title: Scene2_2
 ---
-//screen change here
+<<NextBackground ImageController "housefar">>
 That evening you change into your latest werewolf suit, say goodbye to your parents, and walk out of your house.
 
 Your friends are not here. You want to keep tonight as your secret adventure, so you told them you'll meet up a little later.
@@ -96,6 +99,7 @@ It looks the same as what it was a few years ago, still hard to find under the n
 
 You walk slowly down the street and up the hill, to the door of the old house.
 
+<<NextBackground ImageController "porch">>
 The door is once again before you, battered and chipped.
 
 Yet the hourglass knocker shines, polished and tempting.
@@ -122,6 +126,7 @@ You grope your way through the entryway, skirting the accumulation of dust and t
 
 title: House2_1
 ---
+<<NextBackground ImageController "mirror">>
 You look around and find the side table from your last visit. The plastic bowl is still there, empty.
 
 You look up and realize that the mirror above the side table is broken, its shards dull and lifeless.
@@ -136,7 +141,7 @@ The sound echoes in your ears, as if it were appearing directly in your mind.
 
 You decide to trust your ears, and walk towards the illuminated room.
 
-//screen change here
+<<NextBackground ImageController "livingroom">>
 You enter the front room.
 
 Fortunately, there are no broken floors, trash, or fallen wood chips here. But it still looks dated.
@@ -233,7 +238,7 @@ There’s only silence in the room. All you can do is think.
 
 title: Vision2_4
 ---
-//screen change here
+<<NextBackground ImageController "livingroom">>
 When you return to your senses, the mirror surface is blurred, and you can’t see anything.
 
 The sound you heard before is gone. 
@@ -253,7 +258,7 @@ And you need to get some candy. Your parents will be worried if you come home em
 
 You leave the house and close the door carefully behind you.
 
-//screen change here??
+<<NextBackground ImageController "housefar">>
 At the bottom of the hill, you look back at the shadowy shell of the house.
 
 “I will come again.”
