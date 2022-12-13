@@ -22,6 +22,9 @@ public class ImageController : MonoBehaviour
     //friends
     //8, 17, 40, 70
     
+    //rooms
+    //bowl, kidbed, bedroom, attic, porch, kitchen, basement, livingroom, housefar, mirror, neighborhood
+    
 
     [YarnCommand("NextBackground")]
     public void NextBackground(string place)
