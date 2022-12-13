@@ -289,7 +289,7 @@ public class ImageController : MonoBehaviour
         float alpha = i.color.a;
         if (alpha > .1f)
         {
-            Debug.Log(alpha);
+            //Debug.Log(alpha);
             sm.ToggleEraserSound(true);
             for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
             {
