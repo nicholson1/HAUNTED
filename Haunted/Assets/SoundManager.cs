@@ -9,6 +9,9 @@ public class SoundManager : MonoBehaviour
     public AudioSource Music;
     public AudioSource Sound;
     public AudioSource Loop;
+    public AudioSource Pencil;
+    public AudioSource Eraser;
+
 
     public AudioClip[] musics;
     public AudioClip[] sounds;
@@ -109,6 +112,30 @@ public class SoundManager : MonoBehaviour
         Music.clip = a;
         Music.volume = scale;
         Music.Play();
+    }
+
+    public void TogglePencilSound(bool play)
+    {
+        if (play)
+        {
+            Pencil.Play();
+        }
+        else
+        {
+            //Pencil.PlayOneShot();
+            Pencil.Pause();
+        }
+    }
+    public void ToggleEraserSound(bool play)
+    {
+        if (play)
+        {
+            Eraser.Play();
+        }
+        else
+        {
+            Eraser.Pause();
+        }
     }
     
 }

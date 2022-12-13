@@ -16,7 +16,10 @@ public class ImageController : MonoBehaviour
     public Image NPCImage;
 
     private int index = 0;
+    [SerializeField] private SoundManager sm;
+
     
+
     //nameing convention for transitions "character" + "age" ie: del8, ash17, jul24, riv8, mom1, mom2, kid1, kid2
     //PC
     //8, 13, 17, 24, 40, 70
@@ -283,21 +286,26 @@ public class ImageController : MonoBehaviour
     
     IEnumerator SwitchImage(Image i, Sprite nextImage, float aTime )
     {
-        
         float alpha = i.color.a;
-        if (alpha != 0)
+        if (alpha > .1f)
         {
+            Debug.Log(alpha);
+            sm.ToggleEraserSound(true);
             for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
             {
                 Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,0,t));
                 i.color = newColor;
                 yield return null;
             }
+            sm.ToggleEraserSound(false);
+
         }
         
 
+        
         if (nextImage != null)
         {
+            sm.TogglePencilSound(true);
             alpha = i.color.a;
             i.sprite = nextImage;
             for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
@@ -306,6 +314,8 @@ public class ImageController : MonoBehaviour
                 i.color = newColor;
                 yield return null;
             }
+            sm.TogglePencilSound(false);
+
         }
        
 
