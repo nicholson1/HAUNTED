@@ -3,6 +3,7 @@ tags:
 ---
 <<NextPlayer ImageController "del17">>
 <<NextBackground ImageController "neighborhood">>
+<<PlayMusic SoundManager "scene3">>
 <<NextNPC ImageController "none">>
 <<if $bff is "Ash">>
     <<NextNPC ImageController "ash17">>

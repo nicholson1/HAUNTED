@@ -4,6 +4,7 @@ tags:
 <<NextPlayer ImageController "del24">>
 <<NextBackground ImageController "none">>
 <<NextNPC ImageController "none">>
+<<PlayMusic SoundManager "scene4">>
 Halloween...afternoon, really.
 
 The home you grew up in is littered with moving boxes. It's been a while since you visited, and you realize you took the permanence of this place for granted. 

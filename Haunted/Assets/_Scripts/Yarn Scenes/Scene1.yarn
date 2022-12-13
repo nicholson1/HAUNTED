@@ -4,6 +4,7 @@ tags:
 <<NextPlayer ImageController "del8">>
 <<NextBackground ImageController "none">>
 <<NextNPC ImageController "none">>
+<<PlayMusic SoundManager "scene1">>
 Halloween night. This year finally trick-or-treating with no parents hanging on, holding you back.
 
 They finally caved, on the costume, on going out without them, on everything.
@@ -409,6 +410,7 @@ You grab the candy, grateful your werewolf gloves protect your hands from the pu
 
 As you toss the candy into your bucket, you glance up, into the mirror, and see-
 //screen change to vision here
+<<NextBackground ImageController "mirror">>
 
 ->Yourself?
     <<jump House1_7>>

@@ -18,6 +18,8 @@ title: Scene5_1a
 ---
 <<set $hasKid to true>>
 <<NextNPC ImageController "son1">>
+<<PlayMusic SoundManager "scene6a">>
+
 And of course, Mom's over the moon about getting to spend Halloween with her first and only grandchild.
 
 She didn't quite *get* his cowboy-astronaut-fairy costume at first, but an hour of lore and crayon diagrams later she's become quite the expert on this character, and certainly their biggest fan.
@@ -39,6 +41,7 @@ Like a mirror, seen slightly askew.
 title: Scene5_1b
 ---
 <<set $hasKid to false>>
+<<PlayMusic SoundManager "scene6b">>
 Not intentionally. Never intentionally.
 
 You've always meant to come back, to visit Mom.

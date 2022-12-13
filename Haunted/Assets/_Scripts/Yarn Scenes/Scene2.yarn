@@ -4,6 +4,7 @@ tags:
 <<NextPlayer ImageController "del13">>
 <<NextBackground ImageController "kidbed">>
 <<NextNPC ImageController "none">>
+<<PlayMusic SoundManager "scene2">>
 Halloween night. Well, Halloween afternoon.
 //Then years passed, and Halloween is coming again in a few days.
 
