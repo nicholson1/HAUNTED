@@ -63,8 +63,8 @@ Jules - cat ears, face paint, leotard, and tail all add up to the kind of adorab
 <<NextNPC ImageController "riv8">>
 River - dressed as…no, you really can't say what the costume is meant to be.
 
-The four of you, inseparable since kindergarten, best friends.
 <<NextNPC ImageController "none">>
+The four of you, inseparable since kindergarten, best friends.
 
 Though lately the thought has crossed your mind -- which of them is your best-best friend…?
 
@@ -80,7 +80,7 @@ title: Scene1_4_Ash
 ---
 And it's Ash who sees you first, poking one arm free to wave.
 
-<<NextNPC ImageController "jul8">>
+//<<NextNPC ImageController "jul8">>
 Jules hops up and down in delight. "Delphine's here!"
 
 <<jump Scene1_5>>
@@ -88,7 +88,7 @@ Jules hops up and down in delight. "Delphine's here!"
 
 title: Scene1_4_Jules
 ---
-<<NextNPC ImageController "jul8">>
+//<<NextNPC ImageController "jul8">>
 Jules sees you and bounds to the edge of the streetlight's pool of illumination. "Delphine! You're a werewolf!"
 
 <<jump Scene1_5>>
@@ -96,7 +96,7 @@ Jules sees you and bounds to the edge of the streetlight's pool of illumination.
 
 title: Scene1_4_River
 ---
-<<NextNPC ImageController "riv8">>
+//<<NextNPC ImageController "riv8">>
 River sees you, blinks at you twice, smiling a squinty nervous smile.
 
 Ash and Jules don't realize you've arrived until you join them under the streetlight.
@@ -107,7 +107,7 @@ Ash and Jules don't realize you've arrived until you join them under the streetl
 title: Scene1_5
 ---
 <<NextNPC ImageController "ash8">>
-"Okay, now we're all here, can we pleeeease get some candy?" says Ash. "It's literally Halloween and I haven't had a single candy yet!."
+"Okay, now we're all here, can we pleeeease get some candy?" says Ash. "It's literally Halloween and I haven't had a single candy yet!"
 
 <<NextNPC ImageController "jul8">>
 "Where should we start?" asks Jules. "I heard the Lawsons are giving out full-size candy bars!"
@@ -168,10 +168,12 @@ title: Scene1_7
 ---
 <<NextNPC ImageController "none">>
 <<if $jollyRanchersChosen is true>>
+    <<NextBackground ImageController "neighborhood2">>
     Mark's parents are dressed up as witches, and they offer heaping handfuls of Jolly Ranchers from within their arcane cauldron. 
 
     Everyone's candy bucket gains a satisfying heft.
 <<else>>
+    <<NextBackground ImageController "neighborhood3">>
     The rumors are true -- full-size candy bars at the Lawsons! 
 
     And in their unbelievable goodness, they offer River a glow-in-the-dark rubber ball printed to look like an eyeball. 
@@ -234,6 +236,7 @@ Tin foil, cardboard, glue, googly eyes, and construction paper have come togethe
 <<NextNPC ImageController "jul8">>
 "You're the ghost…of an alien?" asks Jules.
 
+<<NextNPC ImageController "riv8">>
 "Hmm, I never really thought about it like that."
 
 <<NextNPC ImageController "ash8">>
@@ -317,6 +320,7 @@ title: House1_1
 ---
 <<NextBackground ImageController "porch">>
 Each step you take on the house's porch is like the next movement in a vast symphony of creaks and groans.
+<<PlaySound SoundManager "floorcreak">>
 
 There's something unstable in the warp of the floor beneath you, like walking across waves.
 
@@ -365,6 +369,7 @@ You stretch as far as you can, taking hold of the door knocker with your fingert
 
 You knock twice, the sound resonating through the old door.
 
+<<PlaySound SoundManager "doorcreak">>
 With a creak, it falls open, wide enough for you to enter.
 
 ->Go on.
@@ -409,9 +414,7 @@ title: House1_6
 You grab the candy, grateful your werewolf gloves protect your hands from the puddle of dust around it.
 
 As you toss the candy into your bucket, you glance up, into the mirror, and see-
-//screen change to vision here
-<<NextBackground ImageController "mirror">>
-
+<<NextBackground ImageController "vision1">>
 ->Yourself?
     <<jump House1_7>>
 ===
@@ -491,6 +494,7 @@ It could be Jules, looking nervously back at the open door.
 title: House1_9
 ---
 <<NextNPC ImageController "none">>
+<<NextBackground ImageController "mirror">>
 There's no one there.
 
 But the house sighs around you, a creak and a rush of air, as if someone was there only a moment ago.

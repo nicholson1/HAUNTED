@@ -4,6 +4,7 @@ tags:
 <<NextPlayer ImageController "del40">>
 <<NextBackground ImageController "none">>
 <<NextNPC ImageController "none">>
+<<PlayMusic SoundManager "scene5">>
 Halloween night, back in your hometown. Not much has changed around here.
 
 But of course you've changed.
@@ -25,7 +26,7 @@ And of course, Mom's over the moon about getting to spend Halloween with her fir
 She didn't quite *get* his cowboy-astronaut-fairy costume at first, but an hour of lore and crayon diagrams later she's become quite the expert on this character, and certainly their biggest fan.
 
 It's strange to see Daniel and your mom walking hand-in-hand down these same streets.
-<<NextBackground ImageController "neighborhood">>
+<<NextBackground ImageController "neighborhood1">>
 
 Like a mirror, seen slightly askew. 
 
@@ -50,7 +51,7 @@ You've always meant to come back, to visit Mom.
 But somehow she's always ended up visiting you.
 
 Walking with her down these familiar streets, you feel like hardly an echo of who you used to be.
-<<NextBackground ImageController "neighborhood">>
+<<NextBackground ImageController "neighborhood1">>
 
 <<if $parenthoodRejection is false>>
     You used to picture yourself as a parent sometimes (once you'd got your life together). 
@@ -254,6 +255,7 @@ title: House5_3
 ---
 You climb the front steps, back onto the rolling, uneven porch.
 <<NextBackground ImageController "porch">>
+<<PlaySound SoundManager "floorcreak">>
 
 There's a hole in the floor that's new to you.
 
@@ -267,7 +269,7 @@ Strangely, that's a comfort.
 
 title: House5_4
 ---
-<<NextBackground ImageController "mirror">>
+<<NextBackground ImageController "brokenmirror">>
 Though the walls are thinning and the roof is caving in, the air inside the house is warm and thick as ever.
 
 In the dim light, you see the dusty candy bowl sitting atop the side table. 
@@ -292,6 +294,8 @@ Something to explain it all.
 
 title: House5_6
 ---
+<<NextBackground ImageController "vision5">>
+
 There is a face, not yours, but familiar.
 
 Older and so tired.
@@ -409,10 +413,12 @@ Perfect.
 
 title: Basement5_2
 ---
+<<PlaySound SoundManager "puddle">>
 The moldering smell of the basement is oppressive, and you hear puddles splashing beneath your feet.
 
 It's more cave than structure.
 
+<<PlayLoop SoundManager "drip">>
 The walls are ribboned with mineral deposits, a persistent drip echoing around you.
 
 As your eyes adjust, you catch sight of something reflective just a few steps ahead of you.
@@ -497,6 +503,7 @@ If there is one…
 
 title: Basement5_5
 ---
+<<PlayLoop SoundManager "none">>
 The surface of the puddle wavers, and in its glassy muck you do see something…
 
 Swimming into focus, muddled but familiar.
@@ -528,8 +535,8 @@ No future anymore.
     <<jump Basement5_6b>>
 ->Kick the puddle.
     <<jump Basement5_6c>>
-->Cry.
-    <<jump Basement5_6d>>
+//->Cry.
+    //<<jump Basement5_6d>>
 ===
 
 title: Basement5_6a
@@ -561,16 +568,16 @@ The water goes spraying out in all directions, but when you step away, your mirr
 <<jump Basement5_7>>
 ===
 
-title: Basement5_6d
----
-You sob, shaking until you feel sick.
+//title: Basement5_6d
+//---
+//You sob, shaking until you feel sick.
 
-Your tears drop down into the puddle, feathering your miserable reflection a thousandfold.
+//Your tears drop down into the puddle, feathering your miserable reflection a thousandfold.
 
-You cry until there's nothing more to feel.
+//You cry until there's nothing more to feel.
 
-<<jump Basement5_7>>
-===
+//<<jump Basement5_7>>
+//===
 
 title: Basement5_7
 ---
@@ -658,8 +665,9 @@ Only forward.
 
 title: Epilogue_A
 ---
-<<NextBackground ImageController "none">>
+<<NextBackground ImageController "housegone">>
 <<NextPlayer ImageController "del70">>
+<<PlayMusic SoundManager "scene6b">>
 It's Halloween night. You hover at the edge of the demolition site, peering at the house's absence.
 
 Alone, you feel its disappearance acutely, the wind October-chilly and dry.
@@ -682,8 +690,8 @@ You avoid the pools of light cast by the streetlamps as you go.
 
 title: Epilogue_Ba
 ---
-<<NextBackground ImageController "none">>
-
+<<NextBackground ImageController "housegone">>
+<<PlayMusic SoundManager "scene6a">>
 <<NextPlayer ImageController "del70">>
 <<if $bff is "Ash">>
     <<NextNPC ImageController "ash70">>
@@ -763,8 +771,8 @@ There's still time for a scary movie before bed.
 
 title: Epilogue_Ca
 ---
-<<NextBackground ImageController "none">>
-
+<<NextBackground ImageController "housegone">>
+<<PlayMusic SoundManager "scene6a">>
 <<NextPlayer ImageController "del70">>
 <<NextNPC ImageController "son2">>
 It's Halloween night. Well, Halloween dusk. 
@@ -822,7 +830,6 @@ If you're lucky, there'll be time for a scary movie before bed.
 
 title: FinalEnd
 ---
-End Screen of Haunted
 <<NextPlayer ImageController "none">>
 <<NextBackground ImageController "none">>
 <<NextNPC ImageController "none">>

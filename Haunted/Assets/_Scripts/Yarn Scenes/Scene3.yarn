@@ -2,7 +2,7 @@
 tags:
 ---
 <<NextPlayer ImageController "del17">>
-<<NextBackground ImageController "neighborhood">>
+<<NextBackground ImageController "neighborhood4">>
 <<PlayMusic SoundManager "scene3">>
 <<NextNPC ImageController "none">>
 <<if $bff is "Ash">>
@@ -56,6 +56,7 @@ title: Scene3_3d
 ---
 <<NextBackground ImageController "porch">>
 You carefully creep up the creaky steps.
+<<PlaySound SoundManager "floorcreak">>
 As you cross the threshold, you feel the crunch of broken glass beneath your feet.
 
 “This is where I saw the first one,” you whisper, pointing to the front door.
@@ -73,6 +74,7 @@ You are deeply affronted at the disrespect. “Respect the space, man!”
 
 {$bff} looks at you incredulously. “C'mon, Del. It's just a house. It can't hear me.”
 
+<<NextBackground ImageController "brokenmirror">>
 They push past you into the house, through the front room, and on to the living room, running a finger along the dusty old couch.
 Above the fireplace, only the frame of the mirror from your last visit remains. Shards of glass litter the floor.
 
@@ -93,7 +95,9 @@ Your parents' years-old warnings about tetanus ring in your mind.
 “Lame.” 
 They're joking, but it stings more than it should. You hope they still think you're cool.
 
-{$bff} gets up and heads for the stairs. The old wooden steps creak ominously under their weight. 
+<<PlaySound SoundManager "floorcreak">>
+{$bff} gets up and heads for the stairs. The old wooden steps creak ominously under their weight.
+ 
 “I'll be upstairs. If I see any ghosts -” they roll their eyes “- I'll report back.”
 
 <<NextNPC ImageController "none">>
@@ -157,7 +161,8 @@ title: Scene3_UPSTAIRS_1
 <<set $groundFloorExplored to false>>
 You take a deep, cleansing breath. It's just a house, Del. It's just a house.
 “Yeah, let's go for it.”
-
+<<NextNPC ImageController "none">>
+<<PlaySound SoundManager "floorcreak">>
 If one person was enough to make the stairs creak, two people is enough to make you worried about falling through the floor.
 You grip the banister for dear life, following {$bff} onto the upstairs landing.
 
@@ -221,7 +226,7 @@ The mirror ripples and shifts, your reflections fading away.
 ===
 title: Scene3_FUTUREVISION_1
 ---
-//screen change to vision here
+<<NextBackground ImageController "vision4">>
 When the reflection settles, you still see two figures before you. You can't see their faces, but something in you just knows it's you and {$bff}. 
 You're both a little taller in the vision, a little more worn out.
 

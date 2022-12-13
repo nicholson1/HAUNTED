@@ -25,7 +25,7 @@ tags:
 <<declare $hasKid to false>>
 <<declare $vip to "bff">>
 
-Haunted Title Screen
+Haunted
 
 <<jump Scene1>>
 ===

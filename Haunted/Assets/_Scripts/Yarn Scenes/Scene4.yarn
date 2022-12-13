@@ -194,7 +194,7 @@ The possibility of a few minutes to yourself is both chilling and tempting.
 title: Scene4_Walk_1
 ---
 <<NextNPC ImageController "none">>
-<<NextBackground ImageController "neighborhood">>
+<<NextBackground ImageController "neighborhood4">>
 You almost forgot it's Halloween. It's too early for trick-or-treaters. 
 You wonder where all your werewolf costumes ended up. 
 
@@ -231,6 +231,7 @@ You've always known.
 ===
 title: Scene4_Walk_4
 ---
+<<NextBackground ImageController "neighborhood5">>
 The sun is sinking low, and the trick-or-treaters are emerging.
 
 Today is a Saturday - a dream come true for any children getting into the Halloween spirit. 
@@ -402,7 +403,7 @@ Creeped out or not, you refuse to be stopped. You're not a child anymore, after 
 ===
 title: Scene4_House_2
 ---
-<<NextBackground ImageController "mirror">>
+<<NextBackground ImageController "brokenmirror">>
 In the spirit of not being a frightened kid anymore, you resolve to try something new. That's right - you're gonna go to the attic! 
 
 Every time you came here before, you were way too scared to go up there.
@@ -570,7 +571,7 @@ You pull yourself back, and instead of taking in an entire community, you focus 
 
 Your reflection in the window starts to ripple. It shows a picture much clearer than any ordinary window would.
 
-<<NextBackground ImageController "none">>
+<<NextBackground ImageController "vision2">>
 
 The image blurs and distorts, arranging itself into a crystal clear view of an old lady on a rocking chair. 
 

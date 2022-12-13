@@ -149,8 +149,28 @@ public class ImageController : MonoBehaviour
             case "neighborhood5":
                 i = BackgroundImages[15];
                 break;
-            
-            
+            case "brokenmirror":
+                i = BackgroundImages[16];
+                break;
+            case "housegone":
+                i = BackgroundImages[17];
+                break;
+            case "vision1":
+                i = BackgroundImages[18];
+                break;
+            case "vision2":
+                i = BackgroundImages[19];
+                break;
+            case "vision3":
+                i = BackgroundImages[20];
+                break;
+            case "vision4":
+                i = BackgroundImages[21];
+                break;
+            case "vision5":
+                i = BackgroundImages[22];
+                break;
+
             // IF ADDING ANOTHER IMAGE PUT ABOVE THIS
             case "none":
                 i = null;

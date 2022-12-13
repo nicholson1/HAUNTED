@@ -115,6 +115,7 @@ title: Scene2_3
 No one answers, as you expected. 
 
 //this could be a click
+<<PlaySound SoundManager "doorcreak">>
 You take hold of the doorknob, open the door, and enter the old house.
 
 The house is still the same as it was a few years ago, warm and humid. 
@@ -127,7 +128,7 @@ You grope your way through the entryway, skirting the accumulation of dust and t
 
 title: House2_1
 ---
-<<NextBackground ImageController "mirror">>
+<<NextBackground ImageController "brokenmirror">>
 You look around and find the side table from your last visit. The plastic bowl is still there, empty.
 
 You look up and realize that the mirror above the side table is broken, its shards dull and lifeless.
@@ -165,7 +166,8 @@ There is not much dust on the mirror, and it looks cleaner than the other furnit
 
 You think of those close to you, wondering if the mirror knows them too.
 
-//screen change to vision here
+<<NextBackground ImageController "vision3">>
+<<PlayLoop SoundManager "talk">>
 ->Think about your friends.
     <<jump Vision2_1>>
 ->Think about your parents.
@@ -240,6 +242,7 @@ There’s only silence in the room. All you can do is think.
 title: Vision2_4
 ---
 <<NextBackground ImageController "livingroom">>
+<<PlayLoop SoundManager "none">>
 When you return to your senses, the mirror surface is blurred, and you can’t see anything.
 
 The sound you heard before is gone. 
