@@ -45,12 +45,12 @@ title: Scene1_3
 "It's a terrible disease and you get it from old buildings, so don't go up there!" Dad pats you on the shoulder. "You're all we've got, kiddo. No back-ups! Be safe."
 
 And finally you're free. 
+<<NextBackground ImageController "neighborhood1">>
 
 You light out for the meet-up spot, werewolf tail streaming behind you.
 
 Mom took you to three Halloween stores before you found the tail and ears that matched to your satisfaction.
 
-<<NextBackground ImageController "neighborhood">>
 Under the cool white moon of the streetlight, your three friends await --
 
 <<NextNPC ImageController "ash8">>

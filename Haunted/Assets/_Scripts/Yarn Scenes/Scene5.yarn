@@ -17,7 +17,7 @@ But of course you've changed.
 title: Scene5_1a
 ---
 <<set $hasKid to true>>
-<<NextNPC ImageController "kid1">>
+<<NextNPC ImageController "son1">>
 And of course, Mom's over the moon about getting to spend Halloween with her first and only grandchild.
 
 She didn't quite *get* his cowboy-astronaut-fairy costume at first, but an hour of lore and crayon diagrams later she's become quite the expert on this character, and certainly their biggest fan.
@@ -447,7 +447,7 @@ You gaze into its depths, and wish to see…
 
 title: Basement5_4a
 ---
-<<NextNPC ImageController "kid1">>
+<<NextNPC ImageController "son1">>
 Daniel is so young, and there's still so much more to come, maybe more than he can bear.
 
 What will become of him?
@@ -763,7 +763,7 @@ title: Epilogue_Ca
 <<NextBackground ImageController "none">>
 
 <<NextPlayer ImageController "del70">>
-<<NextNPC ImageController "kid2">>
+<<NextNPC ImageController "son2">>
 It's Halloween night. Well, Halloween dusk. 
 
 You get tired so easily now, you'll be in bed long before the kids finish their trick-or-treating rounds.
