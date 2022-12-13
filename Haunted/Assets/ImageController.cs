@@ -131,6 +131,24 @@ public class ImageController : MonoBehaviour
             case "basement":
                 i = BackgroundImages[10];
                 break;
+            case "neighborhood1":
+                i = BackgroundImages[11];
+                break;
+            case "neighborhood2":
+                i = BackgroundImages[12];
+                break;
+            case "neighborhood3":
+                i = BackgroundImages[13];
+                break;
+            case "neighborhood4":
+                i = BackgroundImages[14];
+                break;
+            case "neighborhood5":
+                i = BackgroundImages[15];
+                break;
+            
+            
+            // IF ADDING ANOTHER IMAGE PUT ABOVE THIS
             case "none":
                 i = null;
                 break;
@@ -169,6 +187,8 @@ public class ImageController : MonoBehaviour
             case "del70":
                 i = PlayerImages[5];
                 break;
+            
+            // IF ADDING ANOTHER IMAGE PUT ABOVE THIS
             case "none":
                 i = null;
                 break;
@@ -246,6 +266,8 @@ public class ImageController : MonoBehaviour
             case "kidr":
                 i = NpcImages[18];
                 break;
+            
+            // IF ADDING ANOTHER IMAGE PUT ABOVE THIS
             case "none":
                 i = null;
                 break;
@@ -261,13 +283,18 @@ public class ImageController : MonoBehaviour
     
     IEnumerator SwitchImage(Image i, Sprite nextImage, float aTime )
     {
+        
         float alpha = i.color.a;
-        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        if (alpha != 0)
         {
-            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,0,t));
-            i.color = newColor;
-            yield return null;
+            for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+            {
+                Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,0,t));
+                i.color = newColor;
+                yield return null;
+            }
         }
+        
 
         if (nextImage != null)
         {
