@@ -251,7 +251,7 @@ public class ImageController : MonoBehaviour
                 break;
         }
 
-        SwapImages(NPCImage, i ,1f);
+        SwapImages(NPCImage, i ,.5f);
     }
 
     public void SwapImages(Image image, Sprite newImage, float time)
@@ -269,14 +269,18 @@ public class ImageController : MonoBehaviour
             yield return null;
         }
 
-        alpha = i.color.a;
-        i.sprite = nextImage;
-        for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+        if (nextImage != null)
         {
-            Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,1,t));
-            i.color = newColor;
-            yield return null;
+            alpha = i.color.a;
+            i.sprite = nextImage;
+            for (float t = 0.0f; t < 1.0f; t += Time.deltaTime / aTime)
+            {
+                Color newColor = new Color(1, 1, 1, Mathf.Lerp(alpha,1,t));
+                i.color = newColor;
+                yield return null;
+            }
         }
+       
 
     }
     
