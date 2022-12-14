@@ -60,7 +60,7 @@ You carefully creep up the creaky steps.
 As you cross the threshold, you feel the crunch of broken glass beneath your feet.
 
 “This is where I saw the first one,” you whisper, pointing to the front door.
-
+<<PlaySound SoundManager "none">>
 <<if $bff is "Ash">>
     Ash laughs. “The first time you went psychic?”
 <<elseif $bff is "Jules">>
