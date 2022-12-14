@@ -367,7 +367,7 @@ Far above your head, a tarnished door knocker in the shape of an hourglass, the 
 title: House1_3
 ---
 You stretch as far as you can, taking hold of the door knocker with your fingertips.
-
+<<PlaySound SoundManager "knock">>
 You knock twice, the sound resonating through the old door.
 
 <<PlaySound SoundManager "doorcreak">>

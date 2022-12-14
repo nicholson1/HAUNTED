@@ -32,6 +32,7 @@ public class SoundManager : MonoBehaviour
                 a = sounds[1];
                 break;
             case "floorcreak":
+                scale = 5;
                 a = sounds[2];
                 break;
             case "footsteps":
@@ -39,6 +40,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case "puddle":
                 a = sounds[4];
+                break;
+            case "knock":
+                a = sounds[5];
                 break;
             case "none":
                 scale = 0;
@@ -63,8 +67,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case "swoosh":
                 a = loops[2];
+                scale = .2f;
                 break;
-            
+
             case "none":
                 scale = 0;
                 Loop.Stop();
@@ -90,11 +95,14 @@ public class SoundManager : MonoBehaviour
                 break;
             case "scene2":
                 a = musics[1];
+                scale = .2f;
                 break;
             case "scene3":
                 a = musics[2];
                 break;
             case "scene4":
+                scale = .3f;
+
                 a = musics[3];
                 break;
             case "scene5":
