@@ -1,6 +1,7 @@
 title: Scene1
 tags:
 ---
+<<PlayLoop SoundManager "none">>
 <<NextPlayer ImageController "del8">>
 <<NextBackground ImageController "none">>
 <<NextNPC ImageController "none">>
@@ -328,7 +329,7 @@ When you look back, you see your friends nervously clustered at the bottom of th
 
 If you turn back now, you'll be a scaredy cat.
 
-//these could be clicks
+<<PlaySound SoundManager "none">>
 ->Look in the front window.
     <<jump House1_2a>>
 ->Knock on the front door.
@@ -415,6 +416,8 @@ You grab the candy, grateful your werewolf gloves protect your hands from the pu
 
 As you toss the candy into your bucket, you glance up, into the mirror, and see-
 <<NextBackground ImageController "vision1">>
+<<PlayMusic SoundManager "none">>
+<<PlayLoop SoundManager "swoosh">>
 ->Yourself?
     <<jump House1_7>>
 ===
@@ -493,6 +496,7 @@ It could be Jules, looking nervously back at the open door.
 
 title: House1_9
 ---
+<<PlayLoop SoundManager "none">>
 <<NextNPC ImageController "none">>
 <<NextBackground ImageController "mirror">>
 There's no one there.
@@ -503,6 +507,7 @@ You feel suddenly, terribly nauseous.
 
 You flee the house, tearing across the porch, down the steps, and back to the sidewalk.
 <<NextBackground ImageController "housefar">>
+<<PlayMusic SoundManager "scene1">>
 
 Your friends cluster around you, all asking about what happened.
 

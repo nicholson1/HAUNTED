@@ -70,6 +70,13 @@ title: Meetup5_1
 ---
 But this is hardly the time to get lost in mournful thoughts.
 
+<<if $pal is "Ash">>
+    <<NextNPC ImageController "ash40">>
+<<elseif $pal is "River">>
+    <<NextNPC ImageController "riv40">>
+<<else>>
+    <<NextNPC ImageController "jul40">>
+<<endif>>
 There under the streetlight, waiting for you, is {$pal}, accompanied by a young child dressed as an iridescent green pterodactyl.
 
 <<if $hasKid is true>>
@@ -86,7 +93,6 @@ title: Meetup5_2
 ---
 {$pal} grabs you in a big hug, squeezing you until you feel a bit lightheaded. When did they start working out…?
 
-The pterodactyl offers you a tiny green hand and, with a slight whistle due to an absent front tooth, introduces themself as Merritt.
 <<if $pal is "Ash">>
     <<NextNPC ImageController "kida">>
 <<elseif $pal is "River">>
@@ -94,6 +100,7 @@ The pterodactyl offers you a tiny green hand and, with a slight whistle due to a
 <<else>>
     <<NextNPC ImageController "kidj">>
 <<endif>>
+The pterodactyl offers you a tiny green hand and, with a slight whistle due to an absent front tooth, introduces themself as Merritt.
 
 "My kid," adds {$pal}, laughing at Merritt's frown. "Sorry, sorry -- the pterodactyl I rescued from Jurassic Park."
 
@@ -211,8 +218,8 @@ title: Meetup5_8
 
 You stop short.
 
-There before you is the house.
 <<NextBackground ImageController "housefar">>
+There before you is the house.
 
 <<jump House5_1>>
 ===
@@ -269,6 +276,7 @@ Strangely, that's a comfort.
 
 title: House5_4
 ---
+<<PlaySound SoundManager "none">>
 <<NextBackground ImageController "brokenmirror">>
 Though the walls are thinning and the roof is caving in, the air inside the house is warm and thick as ever.
 
@@ -287,6 +295,8 @@ In this glass, you saw the very first vision -- you and {$bff} here in the house
 You peer into the mirror, looking for the next vision.
 
 Something to explain it all.
+<<PlayMusic SoundManager "none">>
+<<PlayLoop SoundManager "swoosh">>
 
 ->Find yourself there.
     <<jump House5_6>>
@@ -345,6 +355,7 @@ You long so much to hear what they would say, what they will say when this momen
 title: House5_8
 ---
 "Delphine?"
+<<PlayLoop SoundManager "none">>
 
 <<if $bff is "Ash">>
     <<NextNPC ImageController "ash40">>
@@ -584,7 +595,7 @@ title: Basement5_7
 Spent, you curl up against the long-dead husk of the furnace, and rest your chin on your knees.
 
 What more is there to do, but wait?
-
+<<PlayMusic SoundManager "scene5">>
 ->Sit, for who knows how long...
     <<jump Final5_1>>
 ===

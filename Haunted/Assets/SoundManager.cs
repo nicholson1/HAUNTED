@@ -40,6 +40,10 @@ public class SoundManager : MonoBehaviour
             case "puddle":
                 a = sounds[4];
                 break;
+            case "none":
+                scale = 0;
+                Sound.Stop();
+                break;
         }
         Sound.PlayOneShot(a, scale);
     }
@@ -58,7 +62,7 @@ public class SoundManager : MonoBehaviour
                 a = loops[1];
                 break;
             case "swoosh":
-                a = loops[3];
+                a = loops[2];
                 break;
             
             case "none":

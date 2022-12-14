@@ -74,7 +74,7 @@ You are deeply affronted at the disrespect. “Respect the space, man!”
 
 {$bff} looks at you incredulously. “C'mon, Del. It's just a house. It can't hear me.”
 
-<<NextBackground ImageController "brokenmirror">>
+<<NextBackground ImageController "livingroom">>
 They push past you into the house, through the front room, and on to the living room, running a finger along the dusty old couch.
 Above the fireplace, only the frame of the mirror from your last visit remains. Shards of glass litter the floor.
 
@@ -99,7 +99,7 @@ They're joking, but it stings more than it should. You hope they still think you
 {$bff} gets up and heads for the stairs. The old wooden steps creak ominously under their weight.
  
 “I'll be upstairs. If I see any ghosts -” they roll their eyes “- I'll report back.”
-
+<<PlaySound SoundManager "none">>
 <<NextNPC ImageController "none">>
 You creep steadily through the downstairs, keeping an eye out for the supernatural.
 
@@ -154,6 +154,8 @@ As you lock eyes through this strange reflection, both of your faces shift from 
 You gasp, reaching toward the water, reaching out for them. But before you can say anything, the water ripples and shifts.
 
 ->The vision is here.
+    <<PlayMusic SoundManager "none">>
+    <<PlayLoop SoundManager "swoosh">>
     <<jump Scene3_FUTUREVISION_1>>
 ===
 title: Scene3_UPSTAIRS_1
@@ -161,7 +163,7 @@ title: Scene3_UPSTAIRS_1
 <<set $groundFloorExplored to false>>
 You take a deep, cleansing breath. It's just a house, Del. It's just a house.
 “Yeah, let's go for it.”
-<<NextNPC ImageController "none">>
+<<NextBackground ImageController "none">>
 <<PlaySound SoundManager "floorcreak">>
 If one person was enough to make the stairs creak, two people is enough to make you worried about falling through the floor.
 You grip the banister for dear life, following {$bff} onto the upstairs landing.
@@ -222,6 +224,8 @@ The mirror ripples and shifts, your reflections fading away.
 {$bff} gasps, tightly clutching your hand. You barely have the presence of mind to be thrilled.
 
 ->The vision is upon you both.
+    <<PlayMusic SoundManager "none">>
+    <<PlayLoop SoundManager "swoosh">>
     <<jump Scene3_FUTUREVISION_1>>
 ===
 title: Scene3_FUTUREVISION_1
@@ -256,12 +260,14 @@ Back in the house, you sigh shakily.
 ===
 title: Scene3_GROUND_7
 ---
+<<PlayLoop SoundManager "none">>
 <<NextBackground ImageController "kitchen">>
 You are yanked back into reality. Your heart is pounding in your chest. You feel like you just ran a mile.
 You hear the thumping of footsteps above you. They move across the hall. Down the stairs. Out the front door.
 
 You run out to meet {$bff}. They're on the front porch, clearly just as disoriented as you.
 <<NextBackground ImageController "porch">>
+<<PlayMusic SoundManager "scene3">>
 
 <<if $bff is "Ash">>
     <<NextNPC ImageController "ash17">>
@@ -284,10 +290,12 @@ They shake their head furiously. “It's not even real. I'm being pranked or som
 ===
 title: Scene3_UPSTAIRS_6
 ---
+<<PlayLoop SoundManager "none">>
 <<NextBackground ImageController "bedroom">>
 The two of you stare at each other in shock. Your heart is racing. You feel like you just ran a mile.
 
 <<NextBackground ImageController "porch">>
+<<PlayMusic SoundManager "scene3">>
 The two of you rush out of the house. The cool nighttime air is a relief as you step onto the porch.
 
 You and {$bff} sit on the steps, still holding hands. For a long moment, everything is silent. Then-

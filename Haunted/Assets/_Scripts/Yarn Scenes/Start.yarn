@@ -25,6 +25,7 @@ tags:
 <<declare $hasKid to false>>
 <<declare $vip to "bff">>
 
+<<PlayLoop SoundManager "swoosh">>
 Haunted
 
 <<jump Scene1>>

@@ -241,7 +241,7 @@ A couple of androgynous teenagers across the road catch your eye. One has their 
 
 The taller of the two wears a werewolf costume, stirring up your nostalgia more than ever. It puts all your old costumes to shame.
 
-Their partner wears a cat ear headband over a plain sheet with whiskers drawn on. They also wore cat paws and a tail. 
+Their partner wears a cat ear headband over a plain sheet with whiskers drawn on, as well as cat paws and a tail. 
 You're impressed at how they've combined two stereotypical Halloween costumes in a way you've never seen before.
 
 ->Compliment their costumes.
@@ -572,6 +572,8 @@ You pull yourself back, and instead of taking in an entire community, you focus 
 Your reflection in the window starts to ripple. It shows a picture much clearer than any ordinary window would.
 
 <<NextBackground ImageController "vision2">>
+<<PlayMusic SoundManager "none">>
+<<PlayLoop SoundManager "swoosh">>
 
 The image blurs and distorts, arranging itself into a crystal clear view of an old lady on a rocking chair. 
 
@@ -632,7 +634,9 @@ Does she know you wanted more? Is she mocking you for expecting anything else?
 Are you losing your mind? 
 
 Probably. After all, you're staring intently at your own barely-there reflection in the window. 
+<<PlayLoop SoundManager "none">>
 <<NextBackground ImageController "attic">>
+<<PlayMusic SoundManager "scene4">>
 
 The image of you in your twilight years is burned into your brain.
 But only your present self is visible now. 

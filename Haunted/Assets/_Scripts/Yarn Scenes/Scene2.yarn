@@ -167,7 +167,9 @@ There is not much dust on the mirror, and it looks cleaner than the other furnit
 You think of those close to you, wondering if the mirror knows them too.
 
 <<NextBackground ImageController "vision3">>
-<<PlayLoop SoundManager "talk">>
+<<PlayLoop SoundManager "swoosh">>
+//<<PlayLoop SoundManager "talk">>
+<<PlayMusic SoundManager "none">>
 ->Think about your friends.
     <<jump Vision2_1>>
 ->Think about your parents.
@@ -263,6 +265,7 @@ And you need to get some candy. Your parents will be worried if you come home em
 You leave the house and close the door carefully behind you.
 
 <<NextBackground ImageController "housefar">>
+<<PlayMusic SoundManager "scene2">>
 At the bottom of the hill, you look back at the shadowy shell of the house.
 
 “I will come again.”
