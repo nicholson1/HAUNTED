@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 3502dfae790f744ff9a67e1764b9e841
+  - enabled: 1
+    path: Assets/Scenes/YarnScene.unity
+    guid: b075991733eceb740872ec4a72a68540
   m_configObjects: {}
